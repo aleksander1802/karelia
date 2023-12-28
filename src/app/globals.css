@@ -1,27 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/mirra-auriolic');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Mirra Auriolic', sans-serif;
+	src: url('/fonts/mirra.otf');
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	--estate-background: #090e17;
+	--estate-background-image: url('/images/estate/estate_background.png');
+	--white: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: var(--white);
+	background-color: var(--estate-background);
+	overflow-x: hidden;
+}
+
+.estate {
+	background: var(--estate-background-image);
+}
+
+.estate__form {
+	width: 218px;
+	color: #aa6d57;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
