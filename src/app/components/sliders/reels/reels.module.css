@@ -14,11 +14,6 @@
 	align-items: center;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-	color: #fff;
-}
-
 .swiper-button-next:disabled,
 .swiper-button-prev:disabled {
 	opacity: 0.35;
@@ -33,14 +28,3 @@
 	content: '';
 }
 
-.swiper-pagination-fraction {
-	width: max-content;
-}
-
-.swiper-pagination {
-	position: relative;
-}
-
-.swiper-pagination-current {
-	color: var(--accent_slider);
-}

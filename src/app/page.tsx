@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import Estate from './components/estate-first-block/estate';
-import LogoLink from './assets/svg/Logo-link-svg';
-import ReelsSlider from './components/Sliders/Reels';
+import ReelsSlider from './components/sliders/reels/Reels';
 
 export default function Home() {
 	return (
