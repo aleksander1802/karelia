@@ -6,14 +6,14 @@ import LogoLink from '@/app/assets/svg/Logo-link-svg';
 const poiret = Poiret_One({ subsets: ['cyrillic'], weight: '400' });
 
 export default function Estate() {
-	const estate =
+	const estateDescription =
 		'Уютная усадьба в атмосфере первозданной природы, укрытая природой от окружения';
 
 	return (
 		<div className="estate relative min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default">
 			<div className="p-[220px] pt-[331px] pb-0">
 				<div className="inline-flex justify-end items-center max-w-[418px] h-[78px] text-[20px] text-font_light leading-[140%] border-l-2 pl-[35px]">
-					{estate}
+					{estateDescription}
 				</div>
 				<div className="text-[198px] pt-[370px] pb-[138px] leading-[95px] -tracking-[5px] font-mirra flex justify-between ">
 					<span>Усадьба</span>
@@ -160,7 +160,7 @@ export default function Estate() {
 				</div>
 			</div>
 
-			<div className="absolute bottom-0 right-1/2 translate-x-[50%] -translate-y-[90%] z-30">
+			<div className="absolute bottom-0 right-1/2 translate-x-[50%] -translate-y-[90%]">
 				<LogoLink
 					color="#805140"
 					width="230"
@@ -179,7 +179,7 @@ export default function Estate() {
 				src={'/images/estate/tree_back.png'}
 				width={1120}
 				height={797}
-				alt="tree"
+				alt="tree back"
 				priority={true}
 				className="absolute bottom-0 right-0 translate-x-[16%] translate-y-[30%] z-10"
 			/>

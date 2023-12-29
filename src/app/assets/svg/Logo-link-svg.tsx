@@ -1,14 +1,17 @@
 const LogoLink = ({
 	color = '#E6E6E6',
 	width = '231',
+	className,
 }: {
 	color?: string;
 	width?: string;
+	className?: string;
 }) => {
 	let fillColor: string = color;
 
 	return (
 		<svg
+			className={className}
 			width={width}
 			height="232"
 			viewBox="0 0 231 232"

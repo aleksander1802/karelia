@@ -1,11 +1,23 @@
 @import url('https://fonts.cdnfonts.com/css/mirra-auriolic');
+@import url('https://fonts.cdnfonts.com/css/poiret-one');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/scrollbar';
+@import 'swiper/css/pagination';
+
 @font-face {
 	font-family: 'Mirra Auriolic', sans-serif;
 	src: url('/fonts/mirra.otf');
+}
+
+@font-face {
+	font-family: 'Poiret One', sans-serif;
+	src: url('/fonts/PoiretOne-Regular.ttf');
 }
 
 :root {
@@ -15,6 +27,7 @@
 	--estate-background: #090e17;
 	--estate-background-image: url('/images/estate/estate_background.png');
 	--white: #fff;
+	--accent_slider: #c76b4f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +38,7 @@
 	}
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

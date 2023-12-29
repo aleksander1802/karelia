@@ -17,6 +17,7 @@ const config: Config = {
 			colors: {
 				primary: '#090e17',
 				secondary: '#858AB5',
+				secondary_slider: '#2E3C55',
 				accent: '#805140',
 				accent_light: '#aa6d57',
 				font_light: '#E6E6E6',
@@ -28,6 +29,7 @@ const config: Config = {
 			},
 			fontFamily: {
 				mirra: [`Mirra Auriolic`, 'sans-serif'],
+				poiret: [`Poiret One`, 'sans-serif'],
 			},
 		},
 	},
