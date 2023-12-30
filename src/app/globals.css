@@ -26,6 +26,7 @@
 	--white: #fff;
 	--accent_slider: #c76b4f;
 	--secondary_slider: #2e3c55;
+	--font_light: #e6e6e6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,7 +44,7 @@
 }
 
 body {
-	color: var(--white);
+	color: var(--font_light);
 	background-color: var(--estate-background);
 	overflow-x: hidden;
 }

@@ -31,7 +31,7 @@ function ReelsSlider() {
 
 	return (
 		<div
-			className={`relative flex flex-col pt-[275px] pl-[220px] pb-[220px] ${styles.container}`}
+			className={`relative flex flex-col pt-[275px] pl-[220px] ${styles.container}`}
 		>
 			<div className="font-mirra text-[90px] w-[175px] text-center leading-[50px] ">
 				reels
@@ -71,7 +71,7 @@ function ReelsSlider() {
 				</Swiper>
 
 				<div className="highlight absolute top-0 left-[55%] translate-y-[-22%]  w-[1063px] h-[1063px] rounded-[100%] bg-[#313C50] blur-[257px] "></div>
-				<div className="darklight absolute -bottom-[20%] left-[46%]  border-2 w-[996px] h-[3703px] opacity-[0.3] border-1 border-black bg-[#090E17] blur-[532px]"></div>
+				<div className="darklight absolute -bottom-[20%] left-[46%]  border-2 w-[996px] h-[3703px] opacity-[0.3] border-1 border-black bg-[#090E17] blur-[532px] z-0"></div>
 			</div>
 
 			<div className={styles.control}>

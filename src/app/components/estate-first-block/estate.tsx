@@ -9,8 +9,16 @@ export default function Estate() {
 	const estateDescription =
 		'Уютная усадьба в атмосфере первозданной природы, укрытая природой от окружения';
 
+	const width = 1120;
+	const height = 797;
+
+	const imageStyle = {
+		width: width || 1120,
+		height: height || 797,
+	};
+
 	return (
-		<div className="estate relative min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default">
+		<div className="estate relative  min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default">
 			<div className="p-[220px] pt-[331px] pb-0">
 				<div className="inline-flex justify-end items-center max-w-[418px] h-[78px] text-[20px] text-font_light leading-[140%] border-l-2 pl-[35px]">
 					{estateDescription}
@@ -26,7 +34,7 @@ export default function Estate() {
 					<span>карелии</span>
 				</div>
 
-				<form className="flex justify-between flex-row justify-items-center items-center h-[81px] bg-primary [&>*]:w-[357px] ">
+				<form className="relative z-30 flex justify-between flex-row justify-items-center items-center h-[81px] bg-primary [&>*]:w-[357px] ">
 					<span className="font-mirra text-secondary flex pt-[23px] pr-[38px] pb-[12px] pl-[45px] justify-end items-center text-[66px] leading-[90px]">
 						Арендовать
 					</span>
@@ -36,7 +44,7 @@ export default function Estate() {
 						name="name"
 						id="name"
 						placeholder="Ваше имя"
-						className="h-[74px] bg-primary border-l-[1px] border-l-secondary outline-none  py-[22px] px-[37px] text-[20px]"
+						className="h-[74px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none  py-[22px] px-[37px] text-[20px]"
 					/>
 
 					<input
@@ -44,7 +52,7 @@ export default function Estate() {
 						name="number"
 						id="number"
 						placeholder="Телефон"
-						className="h-[74px] bg-primary border-l-[1px] border-l-secondary outline-none input-number py-[22px] px-[37px] text-[20px]"
+						className="h-[74px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none input-number py-[22px] px-[37px] text-[20px]"
 					/>
 
 					<button
@@ -160,7 +168,7 @@ export default function Estate() {
 				</div>
 			</div>
 
-			<div className="absolute bottom-0 right-1/2 translate-x-[50%] -translate-y-[90%]">
+			<div className="absolute bottom-0 right-1/2 translate-x-[50%] -translate-y-[92%]">
 				<LogoLink
 					color="#805140"
 					width="230"
@@ -173,15 +181,8 @@ export default function Estate() {
 				height={797}
 				alt="tree"
 				priority={true}
-				className="absolute bottom-0 right-0 translate-x-[16%] translate-y-[10%] z-20"
-			/>
-			<Image
-				src={'/images/estate/tree_back.png'}
-				width={1120}
-				height={797}
-				alt="tree back"
-				priority={true}
-				className="absolute bottom-0 right-0 translate-x-[16%] translate-y-[30%] z-10"
+				className="absolute  bottom-0 right-0 translate-x-[15%] translate-y-[26%] z-20"
+				style={imageStyle}
 			/>
 		</div>
 	);
