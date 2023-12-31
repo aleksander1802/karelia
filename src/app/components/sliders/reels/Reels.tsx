@@ -47,7 +47,7 @@ function ReelsSlider() {
 					controller={{ control: firstSwiper }}
 					pagination={{
 						type: 'fraction',
-						el: '.swiper-pagination',
+						el: `.${styles['swiper-pagination']}`,
 						clickable: true,
 						formatFractionCurrent: (number) =>
 							number > 9 ? number : '0' + number,
@@ -87,7 +87,9 @@ function ReelsSlider() {
 					</div>
 				</div>
 				<div className="pagination w-[356px] flex justify-end pr-[1rem] pt-[30px] font-poiret text-[66px] select-none">
-					<div className="swiper-pagination z-10"></div>
+					<div
+						className={`${styles['swiper-pagination']}  z-10`}
+					></div>
 				</div>
 			</div>
 		</div>

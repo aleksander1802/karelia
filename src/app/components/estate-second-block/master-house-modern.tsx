@@ -18,8 +18,8 @@ export default function MasterHouseModern() {
 
 			<Image
 				src="/images/master_house/master_house_tv.png"
-				width={733}
-				height={619}
+				width={masterHouseModernWidth}
+				height={masterHouseModernHeight}
 				alt="Master house modern"
 				priority={true}
 				style={masterHouseModernStyle}

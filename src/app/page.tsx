@@ -1,5 +1,6 @@
 import Estate from './components/estate-first-block/estate';
 import MasterHouse from './components/estate-second-block/master-house';
+import MasterHouseSlider from './components/sliders/master-house-slider/MasterHouseSlider';
 import ReelsSlider from './components/sliders/reels/Reels';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
 			<Estate />
 			<ReelsSlider />
 			<MasterHouse />
+			<MasterHouseSlider />
 		</main>
 	);
 }

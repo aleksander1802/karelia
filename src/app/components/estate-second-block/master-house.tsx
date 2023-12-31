@@ -144,10 +144,6 @@ export default function MasterHouse() {
 
 				<MasterHouseModern />
 			</div>
-
-			<span className="pt-[509px] pl-[220px] font-mirra text-[538px] leading-[92%] text-secondary_slider inline-block">
-				M
-			</span>
 		</div>
 	);
 }
