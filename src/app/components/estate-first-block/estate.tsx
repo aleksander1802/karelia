@@ -18,7 +18,7 @@ export default function Estate() {
 	};
 
 	return (
-		<div className="estate relative  min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default">
+		<div className="estate relative min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default">
 			<div className="p-[220px] pt-[331px] pb-0">
 				<div className="inline-flex justify-end items-center max-w-[418px] h-[78px] text-[20px] text-font_light leading-[140%] border-l-2 pl-[35px]">
 					{estateDescription}

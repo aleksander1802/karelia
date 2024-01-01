@@ -23,6 +23,7 @@
 	--background-end-rgb: 255, 255, 255;
 	--estate-background: #090e17;
 	--estate-background-image: url('/images/estate/estate_background.png');
+	--spa-house-background-image: url('/images/spa_house/spa_house.png');
 	--white: #fff;
 	--accent_slider: #c76b4f;
 	--secondary_slider: #2e3c55;
@@ -70,4 +71,14 @@ body {
 
 .swiper-pagination-current {
 	color: var(--accent_slider);
+}
+
+.spa-house {
+	background: var(--spa-house-background-image);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.lineheight-normal {
+	line-height: normal;
 }
