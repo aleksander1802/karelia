@@ -34,9 +34,7 @@ function NatureFirstSlider() {
 	};
 
 	return (
-		<div
-			className={`relative flex flex-col mt-[223px] pl-[220px] ${styles.container}`}
-		>
+		<div className={`relative flex flex-col mt-[223px] pl-[220px]`}>
 			<div className="relative">
 				<Swiper
 					modules={[Navigation, Pagination, Controller]}

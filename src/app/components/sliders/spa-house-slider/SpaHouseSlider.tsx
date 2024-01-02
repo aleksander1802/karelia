@@ -26,15 +26,15 @@ function SpaHouseSlider() {
 	const slideHeight = 576;
 
 	const slideStyle = {
-		width: slideWidth || 580,
+		width: '100%' || 580,
 		height: slideHeight || 576,
 	};
 
-	const activeSlideWidth = 736;
+	const activeSlideWidth = 745;
 	const activeSlideHeight = 612;
 
 	const activeSlideStyle = {
-		width: activeSlideWidth || 736,
+		width: activeSlideWidth || 745,
 		height: activeSlideHeight || 612,
 	};
 
@@ -55,12 +55,12 @@ function SpaHouseSlider() {
 			<div className="relative">
 				<Swiper
 					modules={[Navigation, Pagination, A11y]}
-					slidesPerView={'auto'}
+					slidesPerView={3}
 					initialSlide={1}
-					centeredSlides={true}
+					centeredSlides
 					slideNextClass={styles['next-slide']}
 					wrapperClass={`swiper-wrapper ${styles['swiper-wrapper']}`}
-					spaceBetween={0}
+					
 					onActiveIndexChange={(swiper) =>
 						getActiveIndex(swiper.activeIndex)
 					}
@@ -84,8 +84,8 @@ function SpaHouseSlider() {
 							style={{
 								width:
 									index === activeIndex
-										? activeSlideWidth
-										: slideWidth,
+										? 745
+										: 634,
 							}}
 						>
 							<Image

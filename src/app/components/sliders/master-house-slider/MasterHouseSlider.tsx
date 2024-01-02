@@ -26,7 +26,7 @@ function MasterHouseSlider() {
 	const slideHeight = 576;
 
 	const slideStyle = {
-		width: slideWidth || 580,
+		width: '100%' || 580,
 		height: slideHeight || 576,
 	};
 
@@ -58,7 +58,7 @@ function MasterHouseSlider() {
 				</span>
 				<Swiper
 					modules={[Navigation, Pagination, A11y]}
-					slidesPerView={'auto'}
+					slidesPerView={3}
 					initialSlide={1}
 					centeredSlides={true}
 					slideNextClass={styles['next-slide']}
@@ -84,12 +84,12 @@ function MasterHouseSlider() {
 					{serviceData.map((item, index) => (
 						<SwiperSlide
 							key={index}
-							style={{
-								width:
-									index === activeIndex
-										? activeSlideWidth
-										: slideWidth,
-							}}
+							// style={{
+							// 	width:
+							// 		index === activeIndex
+							// 			? activeSlideWidth
+							// 			: slideWidth,
+							// }}
 						>
 							<Image
 								src={item.link}

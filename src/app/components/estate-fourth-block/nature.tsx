@@ -1,4 +1,4 @@
-export default function NatureHouse() {
+export default function Nature() {
 	return (
 		<div className="nature-house relative min-h-screen text-3xl cursor-default mt-[322px] pt-[660px]">
 			<span className="pl-[214px] font-mirra text-[220px] leading-[78%]">
