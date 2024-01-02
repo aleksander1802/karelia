@@ -23,16 +23,16 @@ export default function Estate() {
 				<div className="inline-flex justify-end items-center max-w-[418px] h-[78px] text-[20px] text-font_light leading-[140%] border-l-2 pl-[35px]">
 					{estateDescription}
 				</div>
-				<div className="text-[198px] pt-[370px] pb-[138px] leading-[95px] -tracking-[5px] font-mirra flex justify-between ">
-					<span>Усадьба</span>
+				<h1 className="text-[198px] pt-[370px] pb-[138px] leading-[95px] -tracking-[5px] font-mirra flex justify-between ">
+					Усадьба
 					<span className="relative">
 						в
 						<div className="absolute top-1/2 left-1/2 -translate-x-[52%] -translate-y-[57%] max-w-max">
 							<Logo width="354" />
 						</div>
 					</span>
-					<span>карелии</span>
-				</div>
+					карелии
+				</h1>
 
 				<form className="relative z-30 flex justify-between flex-row justify-items-center items-center h-[81px] bg-primary [&>*]:w-[357px] ">
 					<span className="font-mirra text-secondary flex pt-[23px] pr-[38px] pb-[12px] pl-[45px] justify-end items-center text-[66px] leading-[90px]">

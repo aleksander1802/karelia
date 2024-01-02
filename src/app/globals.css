@@ -24,6 +24,7 @@
 	--estate-background: #090e17;
 	--estate-background-image: url('/images/estate/estate_background.png');
 	--spa-house-background-image: url('/images/spa_house/spa_house.png');
+	--nature-house-background-image: url('/images/nature_house/nature_house_background.png');
 	--white: #fff;
 	--accent_slider: #c76b4f;
 	--secondary_slider: #2e3c55;
@@ -81,4 +82,10 @@ body {
 
 .lineheight-normal {
 	line-height: normal;
+}
+
+.nature-house {
+	background: var(--nature-house-background-image);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
