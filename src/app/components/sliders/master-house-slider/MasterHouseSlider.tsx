@@ -63,7 +63,7 @@ function MasterHouseSlider() {
 					centeredSlides={true}
 					slideNextClass={styles['next-slide']}
 					wrapperClass={`swiper-wrapper ${styles['swiper-wrapper']}`}
-					
+					spaceBetween={0}
 					onActiveIndexChange={(swiper) =>
 						getActiveIndex(swiper.activeIndex)
 					}

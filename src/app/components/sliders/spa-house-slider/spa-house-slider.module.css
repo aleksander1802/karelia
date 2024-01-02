@@ -1,0 +1,53 @@
+.control {
+	height: max-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-left: 221px;
+	padding-right: 219px;
+	padding-top: 1rem;
+}
+
+.swiper-navigation {
+	position: relative;
+	width: 355px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.swiper-button-next:disabled,
+.swiper-button-prev:disabled {
+	opacity: 0.35;
+}
+
+.swiper-button-next {
+	transform: rotate(180deg);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	content: '';
+}
+
+.swiper-pagination {
+	position: relative;
+}
+
+.swiper-wrapper {
+	align-items: center;
+}
+
+.swiper-navigation {
+	width: 850px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+
+.next-slide {
+	opacity: 0.4;
+}

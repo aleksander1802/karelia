@@ -35,8 +35,6 @@
 	position: relative;
 }
 
-
-
 .swiper-wrapper {
 	align-items: center;
 }
@@ -53,4 +51,3 @@
 .next-slide {
 	opacity: 0.4;
 }
-
