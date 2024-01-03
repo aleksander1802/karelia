@@ -34,7 +34,7 @@ function SpaHouseSlider() {
 	const activeSlideHeight = 612;
 
 	const activeSlideStyle = {
-		width: activeSlideWidth || 745,
+		width: '100%' || 745,
 		height: activeSlideHeight || 612,
 	};
 
@@ -60,7 +60,6 @@ function SpaHouseSlider() {
 					centeredSlides
 					slideNextClass={styles['next-slide']}
 					wrapperClass={`swiper-wrapper ${styles['swiper-wrapper']}`}
-					
 					onActiveIndexChange={(swiper) =>
 						getActiveIndex(swiper.activeIndex)
 					}
@@ -79,15 +78,7 @@ function SpaHouseSlider() {
 					}}
 				>
 					{serviceData.map((item, index) => (
-						<SwiperSlide
-							key={index}
-							style={{
-								width:
-									index === activeIndex
-										? 745
-										: 634,
-							}}
-						>
+						<SwiperSlide key={index}>
 							<Image
 								src={item.link}
 								width={

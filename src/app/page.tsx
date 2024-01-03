@@ -1,3 +1,4 @@
+import GuestHouse from './components/estate-fifth-block/guest-house';
 import Estate from './components/estate-first-block/estate';
 import Nature from './components/estate-fourth-block/nature';
 import MasterHouse from './components/estate-second-block/master-house';
@@ -20,6 +21,7 @@ export default function Home() {
 			<Nature />
 			<NatureFirstSlider />
 			<NatureSecondSlider />
+			<GuestHouse />
 		</main>
 	);
 }

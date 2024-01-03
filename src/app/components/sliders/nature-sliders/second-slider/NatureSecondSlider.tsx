@@ -68,7 +68,6 @@ function NatureSecondSlider() {
 					centeredSlides
 					slideNextClass={styles['next-slide']}
 					wrapperClass={`swiper-wrapper ${styles['swiper-wrapper']}`}
-					
 					onActiveIndexChange={(swiper) =>
 						getActiveIndex(swiper.activeIndex)
 					}
@@ -100,12 +99,13 @@ function NatureSecondSlider() {
 											? activeSlideWidth
 											: slideWidth
 									}
+									priority
 									height={
 										index === activeIndex
 											? activeSlideHeight
 											: slideHeight
 									}
-									alt={`Nature slider image ${index}`}
+									alt={`Nature second slider image ${index}`}
 									style={{
 										...getSlideStyle(index),
 										objectFit: 'cover',
