@@ -91,7 +91,7 @@ function SpaHouseSlider() {
 										? activeSlideHeight
 										: slideHeight
 								}
-								alt={`Master house slider image ${index}`}
+								alt={`Spa house slider image ${index}`}
 								style={{
 									...getSlideStyle(index),
 									objectFit: 'cover',

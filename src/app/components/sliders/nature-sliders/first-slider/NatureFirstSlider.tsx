@@ -61,7 +61,7 @@ function NatureFirstSlider() {
 								src={item.image}
 								width={slideWidth}
 								height={slideHeight}
-								alt={`Nature house first slider image ${index}`}
+								alt={`Nature first slider image ${index}`}
 								style={{ ...slideStyle, objectFit: 'cover' }}
 								className="select-none"
 							/>

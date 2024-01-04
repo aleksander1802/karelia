@@ -54,6 +54,7 @@ function GuestHouseSlider() {
 		return isActive ? activeSlideStyle : slideStyle;
 	};
 
+	
 	return (
 		<Swiper
 			modules={[Navigation, A11y]}
