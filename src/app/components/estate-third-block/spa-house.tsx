@@ -13,7 +13,7 @@ export default function SpaHouse() {
 	};
 
 	return (
-		<div className="spa-house relative min-h-screen text-3xl cursor-default mt-[564px] pt-[924px]">
+		<div className="spa-house relative min-h-screen text-3xl cursor-default mt-[564px] pt-[924px]" >
 			<Image
 				src="/images/spa_house/spa_tree.png"
 				width={treeWidth || 408}
@@ -24,7 +24,7 @@ export default function SpaHouse() {
 				style={treeStyle}
 			/>
 
-			<div className="w-[606px] h-[606px] border-[1px] rounded-full border-accent absolute -top-[294px] right-[471px] -z-10"></div>
+			<div className="w-[606px] h-[606px] border-[1px] rounded-full border-accent absolute -top-[294px] right-[471px] -z-10" id='Спа-комплекс'></div>
 			<span className="w-[606px] h-[606px] font-mirra text-[350px] text-accent absolute z-30 -top-[87px] right-[330px] leading-[261px] ">
 				SPA HOUSE
 			</span>

@@ -1,6 +1,6 @@
 export default function Nature() {
 	return (
-		<div className="nature-house relative min-h-screen text-3xl cursor-default mt-[322px] pt-[660px]">
+		<div className="nature-house relative min-h-screen text-3xl cursor-default mt-[322px] pt-[660px]" id='Природа'>
 			<span className="pl-[214px] font-mirra text-[220px] leading-[78%]">
 				Край озер
 			</span>

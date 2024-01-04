@@ -65,7 +65,7 @@ export default function MasterHouse() {
 	};
 
 	return (
-		<div className="master-house relative min-h-screen cursor-default mt-[300px]">
+		<div className="master-house relative min-h-screen cursor-default mt-[300px]" id='Основной дом'>
 			<div className="flex flex-row justify-between mb-[200px] pl-[154px] pr-[237px]">
 				<div className="master-description flex flex-col justify-between h-[316px]">
 					<span className="text-[90px] font-mirra -tracking-[4.5px]">

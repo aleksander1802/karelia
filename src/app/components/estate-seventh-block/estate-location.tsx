@@ -57,7 +57,7 @@ export default function EsatetLocation() {
 	};
 
 	return (
-		<div className="mb-[150px]">
+		<div id='Расположение'>
 			<div className="pl-[220px] pr-[220px]">
 				<h2 className="h2 pl-[745px] pt-[11px]">Расположение</h2>
 

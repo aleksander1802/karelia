@@ -10,7 +10,10 @@ export default function Territory() {
 	];
 
 	return (
-		<div className="relative pl-[220px] pt-[146px] mb-[297px]">
+		<div
+			className="relative pl-[220px] pt-[146px] mb-[297px]"
+			id="Територия"
+		>
 			<div className="flex flex-row justify-between w-[671px] ml-[658px]">
 				<LogoLink />
 
