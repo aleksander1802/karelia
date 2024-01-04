@@ -2,6 +2,7 @@ import GuestHouse from './components/estate-fifth-block/guest-house';
 import Estate from './components/estate-first-block/estate';
 import Nature from './components/estate-fourth-block/nature';
 import MasterHouse from './components/estate-second-block/master-house';
+import EsatetLocation from './components/estate-seventh-block/estate-location';
 import Territory from './components/estate-sixth-block/territory';
 import SpaHouse from './components/estate-third-block/spa-house';
 import MasterHouseSlider from './components/sliders/master-house-slider/MasterHouseSlider';
@@ -23,8 +24,8 @@ export default function Home() {
 			<NatureFirstSlider />
 			<NatureSecondSlider />
 			<GuestHouse />
-
 			<Territory />
+			<EsatetLocation />
 		</main>
 	);
 }

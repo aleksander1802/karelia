@@ -25,10 +25,24 @@
 	--estate-background-image: url('/images/estate/estate_background.png');
 	--spa-house-background-image: url('/images/spa_house/spa_house.png');
 	--nature-house-background-image: url('/images/nature_house/nature_house_background.png');
+	--location-map: url('/images/location/location_map.png');
+	--location-estate: url('/images/location/location_estate.png');
 	--white: #fff;
 	--accent_slider: #c76b4f;
 	--secondary_slider: #2e3c55;
 	--font_light: #e6e6e6;
+}
+
+.location-map {
+	background: var(--location-map);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.location-estate {
+	background: var(--location-estate);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -88,4 +102,21 @@ body {
 	background: var(--nature-house-background-image);
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.h2 {
+	font-family: Mirra Auriolic;
+	font-size: 90px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 96%;
+	letter-spacing: -4.5px;
+}
+
+.input-feedback {
+	border-color: rgba(230, 230, 230, 0.3);
+}
+
+.input-feedback:focus {
+	border-color: rgba(230, 230, 230);
 }

@@ -44,7 +44,7 @@ export default function Estate() {
 						name="name"
 						id="name"
 						placeholder="Ваше имя"
-						className="h-[74px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none  py-[22px] px-[37px] text-[20px]"
+						className="h-[74px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none py-[22px] px-[37px] text-[20px]"
 					/>
 
 					<input
