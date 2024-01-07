@@ -74,10 +74,10 @@ function NatureFirstSlider() {
 			<div className={styles.control}>
 				<div className={styles['swiper-navigation']}>
 					<div className={styles['swiper-button-prev']}>
-						<NavigationArrow />
+						<NavigationArrow className="fill-accent" />
 					</div>
 					<div className={styles['swiper-button-next']}>
-						<NavigationArrow />
+						<NavigationArrow className="fill-accent" />
 					</div>
 				</div>
 				<div className="pagination w-[356px] flex justify-end pr-[1rem] pt-[16px] font-poiret text-[66px] select-none">
