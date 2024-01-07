@@ -1,4 +1,5 @@
 .control {
+	width: 100%;
 	height: max-content;
 	display: flex;
 	flex-direction: row;
@@ -7,14 +8,9 @@
 	padding-left: 221px;
 	padding-right: 219px;
 	padding-top: 1rem;
-}
-
-.swiper-navigation {
-	position: relative;
-	width: 355px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	position: absolute;
+	bottom: -25%;
+	left: 0;
 }
 
 .swiper-button-next:disabled,
@@ -46,6 +42,9 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .next-slide {

@@ -28,7 +28,7 @@ export default function Territory() {
 				НА территории
 			</h2>
 
-			<div className="absolute top-[258px] left-0 w-[700px] h-[1208px] bg-accent">
+			<div className="absolute top-[258px] left-0 w-[699px] h-[1208px] bg-accent">
 				<p className="absolute bottom-0 left-[220px] pt-[297px] leading-[140%] w-[409px]">
 					Усадьба расположена на первой линии живописного озера
 					Ушкозера, напротив дачи Б.Н.Ельцина по воде

@@ -65,7 +65,10 @@ export default function MasterHouse() {
 	};
 
 	return (
-		<div className="master-house relative min-h-screen cursor-default mt-[300px]" id='Основной дом'>
+		<div
+			className="master-house relative min-h-screen cursor-default mt-[300px]"
+			id="Основной дом"
+		>
 			<div className="flex flex-row justify-between mb-[200px] pl-[154px] pr-[237px]">
 				<div className="master-description flex flex-col justify-between h-[316px]">
 					<span className="text-[90px] font-mirra -tracking-[4.5px]">
@@ -108,21 +111,19 @@ export default function MasterHouse() {
 					width={972}
 					height={1049}
 					alt="Master house"
-					priority={true}
 					style={masterHouseStyle}
 				/>
 				<Image
 					src="/images/master_house/master_house_fence.png"
 					width={584}
 					height={809}
-					alt="Master house"
-					priority={true}
+					alt="Master house fense"
 					style={masterHouseFenceStyle}
 				/>
 				<MasterHouseHearth />
 			</div>
 
-			<div className="relative ml-[528px] mt-[570px] w-[1005px] h-[811px] flex flex-row justify-between items-center">
+			<div className="relative ml-[528px] mt-[570px] w-[1005px] h-[811px] flex flex-row justify-between items-center ">
 				<span className="w-[3628px] leading-[92%] font-mirra text-[538px] -tracking-[27px] text-secondary_slider absolute -top-[105px] -left-[41%] -translate-x-[20%] z-0">
 					Master house
 				</span>
@@ -131,8 +132,7 @@ export default function MasterHouse() {
 					src="/images/master_house/master_house_glasshouse.png"
 					width={607}
 					height={811}
-					alt="Master house"
-					priority={true}
+					alt="Master house glasshouse"
 					style={masterHouseHearthStyle}
 					className="z-30"
 				/>

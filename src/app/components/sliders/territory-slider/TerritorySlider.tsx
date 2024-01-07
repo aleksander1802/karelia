@@ -19,10 +19,13 @@ const serviceData = [
 	{
 		title: '/images/territory/territory_second.png',
 	},
+	{
+		title: '/images/territory/territory_third.jpg',
+	},
 ];
 
 function TerritorySlider() {
-	const slideWidth = 480;
+	const slideWidth = 680;
 	const slideHeight = 614;
 
 	const slideStyle = {
@@ -34,9 +37,9 @@ function TerritorySlider() {
 		<div className="relative pt-[98px] select-none">
 			<Swiper
 				modules={[Navigation, Controller]}
-				slidesPerView={1}
+				slidesPerView={3.4}
 				spaceBetween={23}
-				width={480}
+				loop
 				navigation={{
 					nextEl: `.${styles['swiper-button-next']}`,
 					prevEl: `.${styles['swiper-button-prev']}`,

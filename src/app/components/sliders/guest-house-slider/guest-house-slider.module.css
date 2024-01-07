@@ -36,16 +36,3 @@
 	left: 31px;
 	z-index: 1000;
 }
-
-.swiper-slide {
-	width: 733px;
-}
-
-.swiper-not-slide {
-	width: 182px;
-}
-
-.padding-right {
-	padding-right: 940px;
-	user-select: none;
-}

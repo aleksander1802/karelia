@@ -120,3 +120,11 @@ body {
 .input-feedback:focus {
 	border-color: rgba(230, 230, 230);
 }
+
+.swiper-button-disabled {
+	opacity: 0.35;
+}
+
+.swiper-button-disabled:hover svg {
+	fill: #d8d8d8;
+}

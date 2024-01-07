@@ -21,7 +21,7 @@ export default function MasterHouseModern() {
 				width={masterHouseModernWidth}
 				height={masterHouseModernHeight}
 				alt="Master house modern"
-				priority={true}
+				
 				style={masterHouseModernStyle}
 				className="relative z-0"
 			/>

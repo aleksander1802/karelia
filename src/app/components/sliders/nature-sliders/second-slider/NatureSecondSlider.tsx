@@ -99,7 +99,6 @@ function NatureSecondSlider() {
 											? activeSlideWidth
 											: slideWidth
 									}
-									priority
 									height={
 										index === activeIndex
 											? activeSlideHeight

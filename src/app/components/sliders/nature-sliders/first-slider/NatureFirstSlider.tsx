@@ -20,7 +20,7 @@ const serviceData = [
 		image: '/images/nature_house/first_slider_fourth.png',
 	},
 	{
-		image: '/images/nature_house/first_slider_first.png',
+		image: '/images/nature_house/first_slider_fifth.jpg',
 	},
 ];
 
@@ -38,9 +38,10 @@ function NatureFirstSlider() {
 			<div className="relative">
 				<Swiper
 					modules={[Navigation, Pagination, Controller]}
-					slidesPerView={1}
+					slidesPerView={3.5}
 					spaceBetween={20}
-					width={slideWidth}
+					freeMode
+					loop
 					pagination={{
 						type: 'fraction',
 						el: `.${styles['swiper-pagination']}`,
@@ -73,10 +74,10 @@ function NatureFirstSlider() {
 			<div className={styles.control}>
 				<div className={styles['swiper-navigation']}>
 					<div className={styles['swiper-button-prev']}>
-						<NavigationArrow color="#805140" />
+						<NavigationArrow />
 					</div>
 					<div className={styles['swiper-button-next']}>
-						<NavigationArrow color="#805140" />
+						<NavigationArrow />
 					</div>
 				</div>
 				<div className="pagination w-[356px] flex justify-end pr-[1rem] pt-[16px] font-poiret text-[66px] select-none">

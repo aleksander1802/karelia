@@ -70,8 +70,8 @@ function ReelsSlider() {
 					))}
 				</Swiper>
 
-				<div className="highlight absolute top-0 left-[55%] translate-y-[-22%]  w-[1063px] h-[1063px] rounded-[100%] bg-[#313C50] blur-[257px] "></div>
-				<div className="darklight absolute -bottom-[20%] left-[46%]  border-2 w-[996px] h-[3703px] opacity-[0.3] border-1 border-black bg-[#090E17] blur-[532px] z-0"></div>
+				{/* <div className="highlight absolute top-0 left-[55%] translate-y-[-22%]  w-[1063px] h-[1063px] rounded-[100%] bg-[#313C50] blur-[257px] "></div>
+				<div className="darklight absolute -bottom-[20%] left-[46%]  border-2 w-[996px] h-[3703px] opacity-[0.3] border-1 border-black bg-[#090E17] blur-[532px] z-0"></div> */}
 			</div>
 
 			<div className={styles.control}>
@@ -86,7 +86,7 @@ function ReelsSlider() {
 						<LogoLink />
 					</div>
 				</div>
-				<div className="pagination w-[356px] flex justify-end pr-[1rem] pt-[30px] font-poiret text-[66px] select-none">
+				<div className="w-[356px] flex justify-end pr-[1rem] pt-[30px] font-poiret text-[66px] select-none">
 					<div
 						className={`${styles['swiper-pagination']}  z-10`}
 					></div>

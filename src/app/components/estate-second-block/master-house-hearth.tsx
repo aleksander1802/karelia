@@ -17,7 +17,7 @@ export default function MasterHouseHearth() {
 				width={481}
 				height={642}
 				alt="Master house hearth"
-				priority={true}
+				
 				style={masterHouseHearthStyle}
 				className="z-30"
 			/>

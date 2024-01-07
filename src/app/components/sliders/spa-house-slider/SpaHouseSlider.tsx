@@ -5,7 +5,6 @@ import { A11y, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './spa-house-slider.module.css';
-import { useState } from 'react';
 
 const serviceData = [
 	{
@@ -20,8 +19,6 @@ const serviceData = [
 ];
 
 function SpaHouseSlider() {
-	const [activeIndex, setActiveIndex] = useState(1);
-
 	const slideWidth = 580;
 	const slideHeight = 576;
 
@@ -38,31 +35,17 @@ function SpaHouseSlider() {
 		height: activeSlideHeight || 612,
 	};
 
-	const getActiveIndex = (index: number) => {
-		setActiveIndex(index);
-	};
-
-	const getSlideStyle = (index: number) => {
-		const isActive = index === activeIndex;
-
-		return isActive ? activeSlideStyle : slideStyle;
-	};
-
 	return (
-		<div
-			className={`relative flex flex-col pt-[873px] ${styles.container}`}
-		>
-			<div className="relative">
+		<div className="relative flex flex-row mt-[873px] items-center">
+			<div className="w-[584px]">
 				<Swiper
 					modules={[Navigation, Pagination, A11y]}
-					slidesPerView={3}
-					initialSlide={1}
-					centeredSlides
+					slidesPerView={1}
+					initialSlide={0}
+					speed={1000}
+					loop
 					slideNextClass={styles['next-slide']}
-					wrapperClass={`swiper-wrapper ${styles['swiper-wrapper']}`}
-					onActiveIndexChange={(swiper) =>
-						getActiveIndex(swiper.activeIndex)
-					}
+					allowTouchMove={false}
 					pagination={{
 						type: 'fraction',
 						el: `.${styles['swiper-pagination']}`,
@@ -81,32 +64,80 @@ function SpaHouseSlider() {
 						<SwiperSlide key={index}>
 							<Image
 								src={item.link}
-								width={
-									index === activeIndex
-										? activeSlideWidth
-										: slideWidth
-								}
-								height={
-									index === activeIndex
-										? activeSlideHeight
-										: slideHeight
-								}
+								width={slideWidth}
+								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
 								style={{
-									...getSlideStyle(index),
+									...slideStyle,
 									objectFit: 'cover',
 								}}
 							/>
 						</SwiperSlide>
 					))}
-					<div className={`${styles['swiper-navigation']} z-100`}>
-						<div className={styles['swiper-button-prev']}>
-							<NavigationArrow />
-						</div>
-						<div className={styles['swiper-button-next']}>
-							<NavigationArrow />
-						</div>
-					</div>
+				</Swiper>
+			</div>
+
+			<div className={`relative flex flex-col w-[736px]`}>
+				<div className="relative ">
+					<Swiper
+						modules={[Navigation, A11y]}
+						slidesPerView={1}
+						initialSlide={1}
+						speed={1000}
+						loop
+						slideNextClass={styles['next-slide']}
+						allowTouchMove={false}
+						navigation={{
+							nextEl: `.${styles['swiper-button-next']}`,
+							prevEl: `.${styles['swiper-button-prev']}`,
+						}}
+					>
+						{serviceData.map((item, index) => (
+							<SwiperSlide key={index}>
+								<Image
+									src={item.link}
+									width={activeSlideWidth}
+									height={activeSlideHeight}
+									alt={`Spa house slider image ${index}`}
+									style={{
+										...activeSlideStyle,
+										objectFit: 'cover',
+									}}
+								/>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+			</div>
+
+			<div className="w-[584px]">
+				<Swiper
+					modules={[Navigation, A11y]}
+					slidesPerView={1}
+					initialSlide={2}
+					speed={1000}
+					loop
+					slideNextClass={styles['next-slide']}
+					allowTouchMove={false}
+					navigation={{
+						nextEl: `.${styles['swiper-button-next']}`,
+						prevEl: `.${styles['swiper-button-prev']}`,
+					}}
+				>
+					{serviceData.map((item, index) => (
+						<SwiperSlide key={index}>
+							<Image
+								src={item.link}
+								width={slideWidth}
+								height={slideHeight}
+								alt={`Spa house slider image ${index}`}
+								style={{
+									...slideStyle,
+									objectFit: 'cover',
+								}}
+							/>
+						</SwiperSlide>
+					))}
 				</Swiper>
 			</div>
 
@@ -120,6 +151,15 @@ function SpaHouseSlider() {
 
 				<div className="pagination w-[356px] flex justify-end leading-[80%] font-poiret text-[66px] select-none">
 					<div className={styles['swiper-pagination']}></div>
+				</div>
+			</div>
+
+			<div className={`${styles['swiper-navigation']} z-100`}>
+				<div className={styles['swiper-button-prev']}>
+					<NavigationArrow />
+				</div>
+				<div className={styles['swiper-button-next']}>
+					<NavigationArrow />
 				</div>
 			</div>
 		</div>

@@ -1,11 +1,10 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y, Navigation, Pagination } from 'swiper/modules';
+import { A11y, Navigation } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './guest-house-slider.module.css';
-import { useState } from 'react';
 
 const serviceData = [
 	{
@@ -26,90 +25,87 @@ const serviceData = [
 ];
 
 function GuestHouseSlider() {
-	const [activeIndex, setActiveIndex] = useState(0);
-
-	const slideWidth = 555;
-	const slideHeight = 655;
+	const slideWidthHeight = 655;
+	const activeSlideWidth = 733;
 
 	const slideStyle = {
-		width: slideWidth || 555,
-		height: slideHeight || 655,
+		width: 'auto',
+		height: slideWidthHeight || 655,
 	};
-
-	const activeSlideWidth = 733;
-	const activeSlideHeight = 655;
 
 	const activeSlideStyle = {
-		width: activeSlideWidth || 733,
-		height: activeSlideHeight || 655,
+		width: '100%' || 733,
+		height: slideWidthHeight || 655,
 	};
 
-	const getActiveIndex = (index: number) => {
-		setActiveIndex(index);
-	};
-
-	const getSlideStyle = (index: number) => {
-		const isActive = index === activeIndex;
-
-		return isActive ? activeSlideStyle : slideStyle;
-	};
-
-	
 	return (
-		<Swiper
-			modules={[Navigation, A11y]}
-			onActiveIndexChange={(swiper) => getActiveIndex(swiper.activeIndex)}
-			spaceBetween={20}
-			centeredSlides
-			slidesPerView={'auto'}
-			className={styles['padding-right']}
-			navigation={{
-				nextEl: `.${styles['swiper-button-next']}`,
-				prevEl: `.${styles['swiper-button-prev']}`,
-			}}
-		>
-			{serviceData.map((item, index) => (
-				<SwiperSlide
-					key={index}
-					className={
-						styles[
-							`${
-								index === activeIndex
-									? 'swiper-slide'
-									: 'swiper-not-slide'
-							}`
-						]
-					}
+		<div className="flex flex-row gap-[18px] select-none">
+			<div className="w-[733px]">
+				<Swiper
+					modules={[Navigation, A11y]}
+					slidesPerView={1}
+					loop
+					allowTouchMove={false}
+					navigation={{
+						nextEl: `.${styles['swiper-button-next']}`,
+						prevEl: `.${styles['swiper-button-prev']}`,
+					}}
 				>
-					<Image
-						src={item.image}
-						width={
-							index === activeIndex
-								? activeSlideWidth
-								: slideWidth
-						}
-						height={
-							index === activeIndex
-								? activeSlideHeight
-								: slideHeight
-						}
-						alt={`Nature second slider image ${index}`}
-						style={{
-							...getSlideStyle(index),
-							objectFit: 'cover',
-						}}
-					/>
-				</SwiperSlide>
-			))}
-			<div className={`${styles['swiper-navigation']} z-100`}>
-				<div className={styles['swiper-button-prev']}>
-					<NavigationArrow />
-				</div>
-				<div className={styles['swiper-button-next']}>
-					<NavigationArrow />
-				</div>
+					{serviceData.map((item, index) => (
+						<SwiperSlide key={index}>
+							<Image
+								src={item.image}
+								width={activeSlideWidth}
+								height={slideWidthHeight}
+								alt={`Nature second slider image ${index}`}
+								style={{
+									...activeSlideStyle,
+									objectFit: 'cover',
+								}}
+							/>
+						</SwiperSlide>
+					))}
+					<div className={`${styles['swiper-navigation']} z-100`}>
+						<div className={styles['swiper-button-prev']}>
+							<NavigationArrow />
+						</div>
+						<div className={styles['swiper-button-next']}>
+							<NavigationArrow />
+						</div>
+					</div>
+				</Swiper>
 			</div>
-		</Swiper>
+
+			<div className="w-[615px]">
+				<Swiper
+					modules={[Navigation, A11y]}
+					spaceBetween={18}
+					slidesPerView={3}
+					initialSlide={1}
+					allowTouchMove={false}
+					loop
+					navigation={{
+						nextEl: `.${styles['swiper-button-next']}`,
+						prevEl: `.${styles['swiper-button-prev']}`,
+					}}
+				>
+					{serviceData.map((item, index) => (
+						<SwiperSlide key={index}>
+							<Image
+								src={item.image}
+								width={slideWidthHeight}
+								height={slideWidthHeight}
+								alt={`Nature second slider image ${index}`}
+								style={{
+									...slideStyle,
+									objectFit: 'cover',
+								}}
+							/>
+						</SwiperSlide>
+					))}
+				</Swiper>
+			</div>
+		</div>
 	);
 }
 
