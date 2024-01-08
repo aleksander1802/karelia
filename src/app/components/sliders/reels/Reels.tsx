@@ -30,9 +30,7 @@ function ReelsSlider() {
 	const [firstSwiper, setFirstSwiper] = useState<SwiperClass | null>(null);
 
 	return (
-		<div
-			className={`relative flex flex-col pt-[275px] pl-[220px] ${styles.container}`}
-		>
+		<div className="flex flex-col pt-[275px] pl-[220px]">
 			<div className="font-mirra text-[90px] w-[175px] text-center leading-[50px] ">
 				reels
 			</div>
