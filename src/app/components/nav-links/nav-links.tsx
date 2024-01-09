@@ -32,5 +32,9 @@ export default function NavLinks() {
 		</Link>
 	));
 
-	return <nav className="flex flex-col gap-[36px] pt-[8px] w-max">{menu}</nav>;
+	return (
+		<nav className="relative flex flex-col gap-[36px] pt-[8px] w-max">
+			{menu}
+		</nav>
+	);
 }

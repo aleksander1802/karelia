@@ -6,36 +6,37 @@ import LogoLink from '@/app/assets/svg/Logo-link-svg';
 const poiret = Poiret_One({ subsets: ['cyrillic'], weight: '400' });
 
 export default function Estate() {
-	const estateDescription =
-		'Уютная усадьба в атмосфере первозданной природы, укрытая природой от окружения';
-
-	const width = 1120;
-	const height = 797;
-
-	const imageStyle = {
-		width: width || 1120,
-		height: height || 797,
-	};
-
 	return (
-		<div className="estate relative min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default">
-			<div className="p-[220px] pt-[331px] pb-0">
-				<div className="inline-flex justify-end items-center max-w-[418px] h-[78px] text-[20px] text-font_light leading-[140%] border-l-2 pl-[35px]">
-					{estateDescription}
+		<div className="estate relative min-h-screen bg-cover bg-no-repeat bg-center text-3xl cursor-default overflow-hidden">
+			<div className="xl:p-[220px] xl:pt-[331px] pb-0 lg:p-[100px] lg:pt-[184px]">
+				<span className="absolute top-[30px] right-[217px] text-[20px] leading-[140%] hidden xl:block">
+					+7 919 48 41 786
+				</span>
+				<div className="inline-flex justify-end items-center xl:max-w-[418px] lg:max-w-[294px] xl:text-[20px] lg: text-[16px] text-font_light leading-[140%] border-l-2 xl:pl-[35px] lg:pl-[29px]">
+					Уютная усадьба в атмосфере первозданной природы, <br />{' '}
+					укрытая природой от окружения
 				</div>
-				<h1 className="text-[198px] pt-[370px] pb-[138px] leading-[95px] -tracking-[5px] font-mirra flex justify-between ">
+				<h1 className="xl:text-[198px] lg:text-[155px] xl:pt-[370px] lg:pt-[207px] pb-[138px] xl:leading-[95px] lg:leading-[99px] -tracking-[5px] font-mirra flex justify-between ">
 					Усадьба
 					<span className="relative">
 						в
 						<div className="absolute top-1/2 left-1/2 -translate-x-[52%] -translate-y-[57%] max-w-max">
-							<Logo width="354" />
+							<Logo className="xl:w-[354px] xl:h-[374px] lg:w-[297px] lg:h-[297px]" />
 						</div>
 					</span>
 					карелии
 				</h1>
 
-				<form className="relative z-30 flex justify-between flex-row justify-items-center items-center h-[81px] bg-primary [&>*]:w-[357px] ">
-					<span className="font-mirra text-secondary flex pt-[23px] pr-[38px] pb-[12px] pl-[45px] justify-end items-center text-[66px] leading-[90px]">
+				<form className="relative z-30 flex justify-between flex-row justify-items-center items-center xl:h-[81px] lg:h-[54px] bg-primary xl:[&>*]:w-[357px] lg:[&>*]:w-[277px]">
+					<span
+						className="font-mirra text-secondary flex justify-center 
+					xl:pt-[23px] xl:pb-[12px] xl:pl-[45px] 
+					lg:pt-[18px] lg:pb-[10px] lg:pl-[45px]  
+					items-center xl:text-[66px] lg:text-[44px] 					
+					xl:leading-[90px]
+					lg:leading-[39px]
+					"
+					>
 						Арендовать
 					</span>
 
@@ -44,7 +45,11 @@ export default function Estate() {
 						name="name"
 						id="name"
 						placeholder="Ваше имя"
-						className="h-[74px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none py-[22px] px-[37px] text-[20px]"
+						className="xl:h-[81px] lg:h-[54px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none 
+						xl:py-[22px] xl:px-[37px] xl:text-[20px]
+						lg:py-[16px] lg:px-[37px] lg:text-[16px]
+						
+						"
 					/>
 
 					<input
@@ -52,126 +57,150 @@ export default function Estate() {
 						name="number"
 						id="number"
 						placeholder="Телефон"
-						className="h-[74px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none input-number py-[22px] px-[37px] text-[20px]"
+						className="xl:h-[81px] input-number appearance-none lg:h-[54px] placeholder:text-secondary focus:placeholder:text-font_light bg-primary border-l-[1px] border-l-secondary outline-none 
+						xl:py-[22px] xl:px-[37px] xl:text-[20px]
+						lg:py-[16px] lg:px-[37px] lg:text-[16px]"
 					/>
 
 					<button
 						type="submit"
-						className="flex justify-center items-center text-[24px] font-light bg-accent h-[81px] py-[26px] px-[116px] hover:bg-accent_light"
+						className="flex justify-center items-center xl:text-[24px] lg:text-[18px] font-light bg-accent 
+						xl:h-[81px] lg:h-[54px] 
+						xl:py-[26px] xlpx-[116px]
+						lg:py-[16px] lg:px-[91px]
+						
+						hover:bg-accent_light"
 					>
 						Отправить
 					</button>
 				</form>
 
 				<div
-					className={`flex flex-wrap  pt-[265px] [&>*]:w-max-content [&>*]:h-[96px]  [&>div]:flex [&>div]:flex-col [&>div]:justify-between  gap-x-[144px] gap-y-[131px]
-					font-extralight not-italic`}
+					className="flex flex-wrap  
+					xl:pt-[265px] lg:pt-[141px] 
+					[&>*]:w-max-content xl:[&>*]:h-[96px] lg:[&>*]:h-[73px] [&>div]:flex [&>div]:flex-col [&>div]:justify-between  
+					
+					lg:gap-x-[118px] lg:gap-y-[38px]
+					lg2:gap-x-[144px] lg2:gap-y-[131px]
+					font-extralight not-italic lineheight-normal"
 				>
 					<div className="pr-[18px]">
 						<div>
-							<span className={`${poiret.className} text-[65px]`}>
+							<span
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px]`}
+							>
 								0,5
 							</span>
 							<span
-								className={`${poiret.className} text-[65px] pl-[10px]`}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px] pl-[10px]`}
 							>
 								га
 							</span>
 						</div>
 
-						<span className="text-secondary text-[24px]">
+						<span className="text-secondary xl:text-[24px] lg:text-[18px]">
 							Площадь усадьбы
 						</span>
 					</div>
 					<div>
 						<div>
-							<span className={`${poiret.className} text-[65px]`}>
+							<span
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px]`}
+							>
 								0,25
 							</span>
 							<span
-								className={`${poiret.className} text-[65px] pl-[10px]`}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px] pl-[10px]`}
 							>
 								га
 							</span>
 						</div>
-						<span className="text-secondary text-[24px]">
+						<span className="text-secondary xl:text-[24px] lg:text-[18px]">
 							Собственный берег
 						</span>
 					</div>
 					<div className="pr-[18px]">
 						<div>
 							<span
-								className={`${poiret.className} text-[65px] `}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px]`}
 							>
 								200
 							</span>
 							<span
-								className={`${poiret.className} text-[65px] pl-[10px] relative`}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px] pl-[10px] relative`}
 							>
 								м
-								<span className="text-[30px] absolute top-[3px]">
+								<span className="xl:text-[30px] lg:text-[24px] absolute top-[3px]">
 									2
 								</span>{' '}
 							</span>
 						</div>
 
-						<span className="text-secondary text-[24px]">
+						<span className="text-secondary xl:text-[24px] lg:text-[18px]">
 							Master House
 						</span>
 					</div>
 					<div>
 						<div>
 							<span
-								className={`${poiret.className} text-[65px] `}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px]`}
 							>
 								150
 							</span>
 							<span
-								className={`${poiret.className} text-[65px] pl-[10px] relative`}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px] pl-[10px] relative`}
 							>
 								м
-								<span className="text-[30px] absolute top-[3px]">
+								<span className="xl:text-[30px] lg:text-[24px] absolute top-[3px]">
 									2
 								</span>{' '}
 							</span>
 						</div>
 
-						<span className="text-secondary text-[24px]">
+						<span className="text-secondary xl:text-[24px] lg:text-[18px]">
 							Guest House
 						</span>
 					</div>
 					<div>
 						<div>
 							<span
-								className={`${poiret.className} text-[65px] `}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px]`}
 							>
 								230
 							</span>
 							<span
-								className={`${poiret.className} text-[65px] pl-[10px] relative`}
+								className={`${poiret.className} xl:text-[65px] lg:text-[56px] pl-[10px] relative`}
 							>
 								м
-								<span className="text-[30px] absolute top-[3px]">
+								<span className="xl:text-[30px] lg:text-[24px] absolute top-[3px]">
 									2
 								</span>{' '}
 							</span>
 						</div>
 
-						<span className="text-secondary text-[24px]">
+						<span className="text-secondary xl:text-[24px] lg:text-[18px]">
 							Spa house
 						</span>
 					</div>
 				</div>
 
-				<div className="pt-[207px] w-[948px] font-mirra text-[150px] leading-[121px] text-secondary">
+				<div
+					className="
+				xl:pt-[207px] lg:mt-[96px]  
+				xl:w-[948px] lg:w-[671px] 
+				font-mirra 
+				xl:text-[150px] lg:text-[106px]
+				xl:leading-[121px] lg:leading-[85px]
+				text-secondary"
+				>
 					В вашем распоряжении
 				</div>
 			</div>
 
-			<div className="absolute bottom-0 right-1/2 translate-x-[50%] -translate-y-[92%]">
+			<div className="absolute bottom-0 right-1/2 xl:translate-x-[50%] xl:-translate-y-[182%] lg:-translate-y-[92%]">
 				<LogoLink
 					color="#805140"
-					width="230"
+					className="xl:w-[230px] lg:w-[178px] "
 				/>
 			</div>
 
@@ -181,8 +210,14 @@ export default function Estate() {
 				height={797}
 				alt="tree"
 				priority={true}
-				className="absolute  bottom-0 right-0 translate-x-[15%] translate-y-[26%] z-20"
-				style={imageStyle}
+				className="absolute bottom-0 right-0 
+				xl:translate-x-[15%] 
+				lg:translate-x-[15%] 				
+				lg:translate-y-[0%]
+				z-20
+				xl:w-[1120px] xl:h-[797px]
+				lg:w-[583px] lg:h-[415px]
+				 "
 			/>
 		</div>
 	);

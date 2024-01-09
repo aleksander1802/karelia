@@ -18,7 +18,7 @@ export default function Home() {
 		<main className='relative'>
 			<Menu />
 			<Estate />
-			<ReelsSlider />
+			{/* <ReelsSlider />
 			<MasterHouse />
 			<MasterHouseSlider />
 			<SpaHouse />
@@ -29,7 +29,7 @@ export default function Home() {
 			<GuestHouse />
 			<Territory />
 			<EsatetLocation />
-			<Footer />
+			<Footer /> */}
 		</main>
 	);
 }

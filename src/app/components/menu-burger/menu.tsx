@@ -24,7 +24,7 @@ export default function Menu() {
 		: 'absolute left-[5rem] top-[-544px] duration-300';
 
 	return (
-		<div className="fixed top-0 index left-0 w-full ">
+		<div className="fixed top-0 index left-0 w-full">
 			<button
 				type="button"
 				className="absolute top-0 left-0 w-[72px] h-[67px] bg-accent z-100 outline-none flex flex-col items-center justify-center gap-[8px]"
@@ -42,10 +42,11 @@ export default function Menu() {
 			</button>
 
 			<div
-				className={`bg-black/75  ${backgroundContainer} `}
+				className={`bg-black/90  ${backgroundContainer} `}
 				onClick={() => setIsOpen((state) => !state)}
 			>
-				<div className={`${backgroundLinks}`}>
+				<div className={`${backgroundLinks} relative`}>
+					<div className='absolute -top-[2rem] -left-[8rem] bg-accent w-[500px] h-[500px] rounded-full z-0'></div>
 					<NavLinks />
 				</div>
 			</div>
