@@ -4,14 +4,14 @@ export default function MasterHouseModern() {
 	const masterHouseModernWidth = 733;
 	const masterHouseModernHeight = 619;
 
-	const masterHouseModernStyle = {
-		width: masterHouseModernWidth || 733,
-		height: masterHouseModernHeight || 619,
-	};
-
 	return (
-		<div className="w-[1110px] absolute top-[701px] left-0 gap-[18px] flex flex-row justify-between items-center">
-			<p className="w-[231px] text-[20px]">
+		<div className="xl:w-[1110px] lg:w-[868px]
+		 absolute 
+		 xl:top-[701px] lg:top-[589px]
+		 left-0 gap-[18px] flex flex-row justify-between items-center">
+			<p className="
+			xl:w-[231px] lg:w-[194px]
+			 xl:text-[20px] lg:text-[16px]">
 				Дом оснащен современной техникой и изысканной мебелью известных
 				брендов
 			</p>
@@ -21,9 +21,7 @@ export default function MasterHouseModern() {
 				width={masterHouseModernWidth}
 				height={masterHouseModernHeight}
 				alt="Master house modern"
-				
-				style={masterHouseModernStyle}
-				className="relative z-0"
+				className="relative z-0 xl:w-[733px] xl:h-[619px] lg:w-[572px] lg:h-[483px]"
 			/>
 		</div>
 	);
