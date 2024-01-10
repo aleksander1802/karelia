@@ -27,17 +27,16 @@ function SpaHouseSlider() {
 		height: slideHeight || 576,
 	};
 
-	const activeSlideWidth = 745;
+	const activeSlideWidth = 736;
 	const activeSlideHeight = 612;
 
-	const activeSlideStyle = {
-		width: '100%' || 745,
-		height: activeSlideHeight || 612,
-	};
-
 	return (
-		<div className="relative flex flex-row mt-[873px] items-center">
-			<div className="w-[584px]">
+		<div className="relative flex flex-row mt-[873px] items-center justify-center">
+			<div
+				className="
+			xl:w-[584px] lg:w-[389px] lg2:w-[502px]
+			"
+			>
 				<Swiper
 					modules={[Navigation, Pagination, A11y]}
 					slidesPerView={1}
@@ -68,16 +67,22 @@ function SpaHouseSlider() {
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
 								style={{
-									...slideStyle,
 									objectFit: 'cover',
 								}}
+								className="w-full
+								xl:h-[576px] 
+								lg:h-[448px]"
 							/>
 						</SwiperSlide>
 					))}
 				</Swiper>
 			</div>
 
-			<div className={`relative flex flex-col w-[736px]`}>
+			<div
+				className={`relative flex flex-col 
+				xl:w-[736px] lg:w-[573px]
+			`}
+			>
 				<div className="relative ">
 					<Swiper
 						modules={[Navigation, A11y]}
@@ -96,13 +101,15 @@ function SpaHouseSlider() {
 							<SwiperSlide key={index}>
 								<Image
 									src={item.link}
-									width={activeSlideWidth}
-									height={activeSlideHeight}
+									width={activeSlideWidth || 745}
+									height={activeSlideHeight || 612}
 									alt={`Spa house slider image ${index}`}
 									style={{
-										...activeSlideStyle,
 										objectFit: 'cover',
 									}}
+									className="
+									w-full xl:h-[612px] 
+								 lg:h-[477px]"
 								/>
 							</SwiperSlide>
 						))}
@@ -110,7 +117,7 @@ function SpaHouseSlider() {
 				</div>
 			</div>
 
-			<div className="w-[584px]">
+			<div className="xl:w-[584px] lg:w-[396px] lg2:w-[502px]">
 				<Swiper
 					modules={[Navigation, A11y]}
 					slidesPerView={1}
@@ -132,9 +139,11 @@ function SpaHouseSlider() {
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
 								style={{
-									...slideStyle,
 									objectFit: 'cover',
 								}}
+								className="w-full 
+								xl:h-[576px] 
+								lg:h-[448px]"
 							/>
 						</SwiperSlide>
 					))}
@@ -142,14 +151,38 @@ function SpaHouseSlider() {
 			</div>
 
 			<div className={styles.control}>
-				<div className="w-[732px] flex flex-row justify-between items-start">
-					<p className="w-[230px] text-[70px] leading-[60%] text-accent font-poiret">
+				<div
+					className="
+				xl:w-[732px] lg:w-[539px] lg2:w-[662px]
+				flex flex-row justify-between items-start"
+				>
+					<p
+						className="
+					xl:w-[230px] lg:w-[178px]
+					xl:text-[70px] lg:text-[50px] 
+					leading-[60%]
+					 text-accent font-poiret"
+					>
 						Private lounge space
 					</p>
-					<p className="w-[356px] text-[20px]">Описание хамама</p>
+					<p
+						className="
+						xl:w-[356px] lg:w-[301px]  
+						xl:text-[20px] lg:text-[16px]"
+					>
+						Описание хамама
+					</p>
 				</div>
 
-				<div className="pagination w-[356px] flex justify-end leading-[80%] font-poiret text-[66px] select-none">
+				<div
+					className="pagination 
+				xl:w-[356px] lg:w-[276px]
+				leading-[80%]
+				xl:text-[66px] lg:text-[48px] 
+				flex justify-end
+				font-poiret 
+				select-none"
+				>
 					<div className={styles['swiper-pagination']}></div>
 				</div>
 			</div>

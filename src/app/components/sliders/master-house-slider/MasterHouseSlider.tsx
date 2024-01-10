@@ -22,22 +22,22 @@ function MasterHouseSlider() {
 	const slideWidth = 580;
 	const slideHeight = 576;
 
-	const slideStyle = {
-		width: '100%' || 580,
-		height: slideHeight || 576,
-	};
-
 	const activeSlideWidth = 736;
 	const activeSlideHeight = 612;
 
-	const activeSlideStyle = {
-		width: '100%' || 736,
-		height: activeSlideHeight || 612,
-	};
-
 	return (
-		<div className="relative flex flex-row mt-[873px] items-center">
-			<div className="w-[584px]">
+		<div className="relative flex flex-row xl:mt-[873px] lg:mt-[704px] items-center justify-center">
+			<span className='
+			absolute
+			xl:-top-[250px] lg:-top-[200px]
+			xl:left-[220px] lg:left-[95px]
+			font-mirra
+			text-secondary_slider
+			xl:text-[538px] lg:text-[428px] 
+			leading-[50%]
+			select-none
+			'>M</span>
+			<div className="xl:w-[584px] lg:w-[389px] lg2:w-[502px]">
 				<Swiper
 					modules={[Navigation, Pagination, A11y]}
 					slidesPerView={1}
@@ -64,20 +64,22 @@ function MasterHouseSlider() {
 						<SwiperSlide key={index}>
 							<Image
 								src={item.link}
-								width={slideWidth}
-								height={slideHeight}
+								width={slideWidth || 580}
+								height={slideHeight || 576}
 								alt={`Spa house slider image ${index}`}
 								style={{
-									...slideStyle,
 									objectFit: 'cover',
 								}}
+								className="w-full
+								xl:h-[576px] 
+								lg:h-[448px]"
 							/>
 						</SwiperSlide>
 					))}
 				</Swiper>
 			</div>
 
-			<div className={`relative flex flex-col w-[736px]`}>
+			<div className={`relative flex flex-col xl:w-[736px] lg:w-[573px]`}>
 				<div className="relative ">
 					<Swiper
 						modules={[Navigation, A11y]}
@@ -96,13 +98,14 @@ function MasterHouseSlider() {
 							<SwiperSlide key={index}>
 								<Image
 									src={item.link}
-									width={activeSlideWidth}
-									height={activeSlideHeight}
+									width={activeSlideWidth || 736}
+									height={activeSlideHeight || 612}
 									alt={`Spa house slider image ${index}`}
 									style={{
-										...activeSlideStyle,
 										objectFit: 'cover',
 									}}
+									className="w-full xl:h-[612px] 
+								 lg:h-[477px]"
 								/>
 							</SwiperSlide>
 						))}
@@ -110,7 +113,7 @@ function MasterHouseSlider() {
 				</div>
 			</div>
 
-			<div className="w-[584px]">
+			<div className="xl:w-[584px] lg:w-[396px] lg2:w-[502px]">
 				<Swiper
 					modules={[Navigation, A11y]}
 					slidesPerView={1}
@@ -132,9 +135,11 @@ function MasterHouseSlider() {
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
 								style={{
-									...slideStyle,
 									objectFit: 'cover',
 								}}
+								className="w-full 
+								xl:h-[576px] 
+								lg:h-[448px]"
 							/>
 						</SwiperSlide>
 					))}
@@ -142,17 +147,39 @@ function MasterHouseSlider() {
 			</div>
 
 			<div className={styles.control}>
-				<div className="w-[732px] flex flex-row justify-between items-start">
-					<p className="w-[230px] text-[70px] leading-[60%] text-accent font-poiret">
+				<div
+					className="
+				xl:w-[732px] lg:w-[579px] lg2:w-[702px]
+				flex flex-row justify-between items-start"
+				>
+					<p
+						className="
+					xl:w-[230px] lg:w-[178px]
+					xl:text-[70px] lg:text-[50px] 
+					leading-[60%]
+					 text-accent font-poiret"
+					>
 						Private lounge space
 					</p>
-					<p className="w-[356px] text-[20px]">
+					<p
+						className="
+						xl:w-[356px] lg:w-[301px]  
+						xl:text-[20px] lg:text-[16px]"
+					>
 						Уютная усадьба в атмосфере первозданной природы, укрытая
 						природой от окружения.
 					</p>
 				</div>
 
-				<div className="pagination w-[356px] flex justify-end leading-[80%] font-poiret text-[66px] select-none">
+				<div
+					className="pagination 
+				xl:w-[356px] lg:w-[276px]
+				leading-[80%]
+				xl:text-[66px] lg:text-[48px] 
+				flex justify-end
+				font-poiret 
+				select-none"
+				>
 					<div className={styles['swiper-pagination']}></div>
 				</div>
 			</div>

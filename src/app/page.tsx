@@ -17,12 +17,12 @@ export default function Home() {
 	return (
 		<main className='relative'>
 			<Menu />
-			{/* <Estate /> */}
-			{/* <ReelsSlider /> */}
+			<Estate />
+			<ReelsSlider />
 			<MasterHouse />
-			{/* <MasterHouseSlider /> */}
-			{/* <SpaHouse /> */}
-			{/* <SpaHouseSlider /> */}
+			<MasterHouseSlider />
+			<SpaHouse />
+			<SpaHouseSlider />
 			{/* <Nature /> */}
 			{/* <NatureFirstSlider /> */}
 			{/* <NatureSecondSlider /> */}

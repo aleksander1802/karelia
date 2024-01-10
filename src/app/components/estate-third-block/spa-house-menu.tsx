@@ -13,14 +13,38 @@ export default function SpaHouseMenu() {
 	];
 
 	return (
-		<div className="h-[608px] w-[608px] relative ">
-			<div className="h-[608px] w-[608px] absolute top-0 left-0 rounded-full bg-accent z-10"></div>
+		<div
+			className="
+		xl:h-[608px] xl:w-[608px] lg:h-[572px] lg:w-[572px]
+		 relative "
+		>
+			<div
+				className="
+			xl:h-[608px] xl:w-[608px] lg:h-[572px] lg:w-[572px]
+			absolute top-0 left-0 rounded-full bg-accent z-10"
+			></div>
 
-			<p className="absolute top-[100px] -left-[11px] z-30 w-[229px] font-poiret text-[56px] leading-[80.5%]">
+			<p
+				className="absolute 
+			xl:top-[100px] lg:top-[93px]
+			-left-[11px] 
+			z-30 
+			w-[229px] 
+			font-poiret 
+			xl:text-[56px] lg:text-[48px] 
+			leading-[80.5%]"
+			>
 				2 этажа элитного отдыха
 			</p>
 
-			<ul className="relative z-30 flex flex-col gap-[26px] text-[24px] font-light pl-[238px] pt-[105px] ">
+			<ul
+				className="relative z-30 flex flex-col 
+			xl:gap-[26px] lg:gap-[22px]
+			xl:text-[24px] lg:text-[18px]
+			font-light 
+			xl:pl-[238px] lg:pl-[293px]
+			pt-[105px] "
+			>
 				{menuItems.map((item, idx) => (
 					<li
 						key={idx}
@@ -32,9 +56,13 @@ export default function SpaHouseMenu() {
 			</ul>
 
 			<LogoLink
-				width="227"
-				height="227"
-				className="absolute -bottom-[29px] -left-[14px] z-0"
+				className="absolute 
+				xl:-bottom-[29px] lg:-bottom-[18px]
+				xl:-left-[14px] lg:left-[2px]
+				z-0 
+				xl:w-[227px] xl:h-[227px]
+				lg:w-[178px] lg:h-[178px]
+				"
 			/>
 		</div>
 	);

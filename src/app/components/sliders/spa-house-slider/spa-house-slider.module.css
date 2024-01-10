@@ -50,3 +50,33 @@
 .next-slide {
 	opacity: 0.4;
 }
+
+@media (min-width: 1280px) {
+	.control {
+		padding-left: 153px;
+		padding-right: 182px;
+		bottom: -21%;
+	}
+	.swiper-navigation {
+		width: 660px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.swiper-navigation {
+		width: 660px;
+	}
+}
+
+@media (min-width: 1601px) {
+	.control {
+		padding-left: 221px;
+		padding-right: 219px;
+		bottom: -25%;
+	}
+
+	.swiper-navigation {
+		width: 860px;
+	}
+}
+
