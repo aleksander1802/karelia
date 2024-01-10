@@ -28,13 +28,13 @@ function NatureFirstSlider() {
 	const slideWidth = 485;
 	const slideHeight = 532;
 
-	const slideStyle = {
-		width: slideWidth || 485,
-		height: slideHeight || 532,
-	};
-
 	return (
-		<div className={`relative flex flex-col mt-[223px] pl-[220px]`}>
+		<div
+			className={`relative flex flex-col 
+		xl:mt-[223px] lg:mt-[126px] 
+		xl:pl-[220px] lg:pl-[98px]
+		`}
+		>
 			<div className="relative">
 				<Swiper
 					modules={[Navigation, Pagination, Controller]}
@@ -63,8 +63,12 @@ function NatureFirstSlider() {
 								width={slideWidth}
 								height={slideHeight}
 								alt={`Nature first slider image ${index}`}
-								style={{ ...slideStyle, objectFit: 'cover' }}
-								className="select-none"
+								style={{ objectFit: 'cover' }}
+								className="select-none 
+								xl:w-[485px] xl:h-[532px]
+								lg2:w-[425px] lg2:h-[473px]
+								lg:w-[375px] lg:h-[413px]
+								"
 							/>
 						</SwiperSlide>
 					))}

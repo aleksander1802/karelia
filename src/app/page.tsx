@@ -23,9 +23,9 @@ export default function Home() {
 			<MasterHouseSlider />
 			<SpaHouse />
 			<SpaHouseSlider />
-			{/* <Nature /> */}
-			{/* <NatureFirstSlider /> */}
-			{/* <NatureSecondSlider /> */}
+			<Nature />
+			<NatureFirstSlider />
+			<NatureSecondSlider />
 			{/* <GuestHouse /> */}
 			{/* <Territory /> */}
 			{/* <EsatetLocation /> */}

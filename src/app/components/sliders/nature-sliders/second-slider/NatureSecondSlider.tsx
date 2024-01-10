@@ -47,25 +47,24 @@ function NatureSecondSlider() {
 	const slideWidth = 356;
 	const slideHeight = 375;
 
-	const slideStyle = {
-		width: slideWidth || 356,
-		height: slideHeight || 375,
-		position: 'absolute' as 'absolute',
-		top: '-91px',
-	};
-
 	const activeSlideWidth = 753;
 	const activeSlideHeight = 497;
 
-	const activeSlideStyle = {
-		width: activeSlideWidth || 753,
-		height: activeSlideHeight || 497,
-	};
-
 	return (
-		<div className={`relative flex flex-col mt-[269px]`}>
+		<div
+			className={`relative flex flex-col 
+		xl:mt-[269px] lg:mt-[219px]
+		`}
+		>
 			<div className="relative ">
-				<h2 className="absolute text-[220px] leading-[78%] font-mirra -tracking-[11px] text-accent left-[220px]">
+				<h2
+					className="absolute 
+				text-[220px] 
+				leading-[78%] 
+				font-mirra 
+				-tracking-[11px] text-accent 
+				xl:left-[220px] lg:left-[100px] "
+				>
 					рядом
 				</h2>
 				<Swiper
@@ -89,37 +88,65 @@ function NatureSecondSlider() {
 				>
 					{serviceData.map((item, index) => (
 						<SwiperSlide key={index}>
-							<div className="pl-[220px] pb-[130px]">
-								<div className="flex flex-row items-end ml-[377px]">
+							<div
+								className="
+							xl:pl-[220px] xl:pb-[130px]
+							lg:pl-[100px] lg:pb-[130px]
+							"
+							>
+								<div
+									className="flex flex-row items-end 
+								xl:ml-[377px] lg:ml-[292px]
+								"
+								>
 									<Image
 										src={item['first-image']}
-										width={activeSlideWidth}
-										height={activeSlideHeight}
+										width={activeSlideWidth || 753}
+										height={activeSlideHeight || 497}
 										alt={`Nature second slider image ${index}`}
 										style={{
-											...activeSlideStyle,
 											objectFit: 'cover',
 										}}
+										className="
+										xl:w-[753px] xl:h-[497px]
+										lg:w-[596px] lg:h-[393px]
+
+										"
 									/>
-									<div className="relative bg-accent w-full h-[478px]">
+									<div className="relative bg-accent w-full 
+									xl:h-[478px] lg:h-[393px]
+									">
 										<Image
 											src={item['second-image']}
-											width={activeSlideWidth}
-											height={activeSlideHeight}
+											width={slideWidth || 356}
+											height={slideHeight || 375}
 											alt={`Nature second slider image ${index}`}
-											style={{
-												...slideStyle,
-												objectFit: 'cover',
-											}}
+											
+											className="
+											xl:w-[356px] xl:h-[375px] 
+											lg:w-[277px] lg:h-[291px] 
+											object-cover
+											xl:-top-[91px] lg:-top-[88px]
+											 absolute
+											"
 										/>
 									</div>
 								</div>
 
-								<div className="absolute left-[240px]  w-[1116px] flex flex-row justify-between items-start pt-[18px]">
-									<h2 className="text-[90px] leading-[96%] font-mirra -tracking-[4.5px]">
+								<div className="absolute 
+								xl:left-[240px] lg:left-[100px]
+								xl:w-[1116px] lg:w-[870px]
+								flex flex-row justify-between items-start pt-[18px]">
+									<h2 className="
+									xl:text-[90px] lg:text-[78px]
+
+									leading-[96%] font-mirra -tracking-[4.5px]">
 										{item.title}
 									</h2>
-									<p className="w-[357px] text-[20px] leading-[140%]">
+									<p className="
+									xl:w-[357px] lg:w-[277px] 
+									xl:text-[20px] lg:text-[16px]
+									leading-[140%]">
 										{item.description}
 									</p>
 								</div>
@@ -128,7 +155,9 @@ function NatureSecondSlider() {
 					))}
 				</Swiper>
 				<div className={styles.control}>
-					<div className="pagination w-[356px] flex justify-end leading-[80%] font-poiret text-[66px] select-none">
+					<div className="pagination w-[356px] flex justify-end leading-[80%] font-poiret 
+					xl:text-[66px] lg:text-[48px]
+					select-none">
 						<div className={styles['swiper-pagination']}></div>
 					</div>
 				</div>

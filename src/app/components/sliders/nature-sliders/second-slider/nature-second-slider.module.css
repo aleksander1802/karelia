@@ -42,3 +42,35 @@
 .swiper-wrapper {
 	padding-top: 90px;
 }
+
+@media (min-width: 1280px) {
+	.control {
+		padding-right: 100px;
+		bottom: 70px;
+	}
+	.swiper-navigation {
+		width: 1163px;
+		top: 388px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.swiper-navigation {
+		width: 1163px;
+		
+	}
+}
+
+@media (min-width: 1601px) {
+	.control {
+		padding-right: 220px;
+		bottom: 50px;
+		right: 0;
+	}
+	.swiper-navigation {
+		width: 1410px;
+		top: 438px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

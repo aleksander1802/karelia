@@ -13,7 +13,9 @@ export default function SpaHouse() {
 	};
 
 	return (
-		<div className="spa-house relative min-h-screen text-3xl cursor-default mt-[714px] xl:pt-[924px] lg:pt-[614px]">
+		<div className="spa-house relative min-h-screen text-3xl cursor-default 
+		xl:mt-[714px] lg2:mt-[600px]  lg:mt-[500px]
+		xl:pt-[924px] lg:pt-[614px]">
 			<Image
 				src="/images/spa_house/spa_tree.png"
 				width={treeWidth || 408}

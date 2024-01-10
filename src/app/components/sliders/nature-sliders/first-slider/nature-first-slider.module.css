@@ -1,5 +1,5 @@
 .control {
-	width: 1500px;
+	width: 1450px;
 	height: max-content;
 	display: flex;
 	flex-direction: row;
@@ -30,4 +30,31 @@
 
 .swiper-pagination {
 	position: relative;
+}
+
+@media (min-width: 1280px) {
+	.control {
+		width: 1090px;
+	}
+	.swiper-navigation {
+		width: 275px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.control {
+		width: 1290px;
+	}
+	.swiper-navigation {
+		width: 357px;
+	}
+}
+
+@media (min-width: 1601px) {
+	.control {
+		width: 1450px;
+	}
+	.swiper-navigation {
+		width: 357px;
+	}
 }
