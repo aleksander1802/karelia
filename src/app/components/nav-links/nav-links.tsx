@@ -26,14 +26,21 @@ export default function NavLinks() {
 		<Link
 			key={index}
 			href={`#${link.link}`}
-			className="text-[24px] font-extralight"
+			className="
+			xl:text-[24px] lg:text-[18px]
+			 font-extralight"
 		>
 			{link.link}
 		</Link>
 	));
 
 	return (
-		<nav className="relative flex flex-col gap-[36px] pt-[8px] w-max">
+		<nav
+			className="relative flex flex-col 
+		xl:gap-[36px] lg:gap-[22px] 
+		pt-[8px] 
+		w-max"
+		>
 			{menu}
 		</nav>
 	);

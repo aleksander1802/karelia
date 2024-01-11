@@ -14,7 +14,7 @@ export default function Territory() {
 			className="relative 
 			xl:pl-[220px] lg:pl-[96px]
 			xl:pt-[146px] lg:pt-[145px]
-			mb-[297px]"
+			xl:mb-[297px] lg:mb-[190px]"
 			id="Територия"
 		>
 			<div
