@@ -28,7 +28,6 @@
 }
 
 @media (min-width: 1280px) {
-	
 	.swiper-navigation {
 		width: 510px;
 		bottom: 70px;
@@ -36,16 +35,13 @@
 }
 
 @media (min-width: 1400px) {
-	
 	.swiper-navigation {
 		width: 620px;
 	}
 }
 
 @media (min-width: 1601px) {
-	
 	.swiper-navigation {
 		width: 676px;
 	}
 }
-

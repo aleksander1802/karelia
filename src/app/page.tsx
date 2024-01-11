@@ -24,10 +24,10 @@ export default function Home() {
 			<SpaHouse />
 			<SpaHouseSlider />
 			<Nature />
-			<NatureFirstSlider />
-			<NatureSecondSlider /> */}
-			<GuestHouse />
-			{/* <Territory /> */}
+			<NatureFirstSlider /> */}
+			{/* <NatureSecondSlider /> */}
+			{/* <GuestHouse /> */}
+			<Territory />
 			{/* <EsatetLocation /> */}
 			{/* <Footer /> */}
 		</main>

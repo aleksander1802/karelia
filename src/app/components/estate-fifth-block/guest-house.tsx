@@ -4,7 +4,7 @@ export default function GuestHouse() {
 	return (
 		<div
 			className="flex flex-row gap-[20px] 
-		xl:mt-[243px] lg:mt-[185px]
+		xl:mt-[243px] lg2:mt-[165px] lg:mt-[135px]
 		xl:pt-[188px] lg:pt-[129px] 
 		xl:pl-[220px] lg:pl-[100px]
 		xl:pb-[216px] lg:pb-[135px] 

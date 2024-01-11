@@ -28,13 +28,11 @@ function TerritorySlider() {
 	const slideWidth = 680;
 	const slideHeight = 614;
 
-	const slideStyle = {
-		width: '100%' || 480,
-		height: slideHeight || 614,
-	};
-
 	return (
-		<div className="relative pt-[98px] select-none">
+		<div className="relative 
+		xl:pt-[98px]  lg:pt-[58px]
+		xl:pl-0  lg:pl-[38px]  
+		select-none">
 			<Swiper
 				modules={[Navigation, Controller]}
 				slidesPerView={3.4}
@@ -49,13 +47,15 @@ function TerritorySlider() {
 					<SwiperSlide key={index}>
 						<Image
 							src={item.title}
-							width={slideWidth}
-							height={slideHeight}
+							width={slideWidth || 680}
+							height={slideHeight || 614}
 							alt={`Territory slider image ${index}`}
 							style={{
-								...slideStyle,
 								objectFit: 'cover',
 							}}
+							className="w-full 
+							xl:h-[614px] lg:h-[481px]
+							"
 						/>
 					</SwiperSlide>
 				))}

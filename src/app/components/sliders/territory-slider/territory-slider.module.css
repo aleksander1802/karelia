@@ -27,3 +27,25 @@
 .swiper-pagination {
 	position: relative;
 }
+
+@media (min-width: 1280px) {
+	.swiper-navigation {
+		left: 210px;
+		width: 340px;		
+	}
+}
+
+@media (min-width: 1400px) {
+	.swiper-navigation {
+		left: 243px;
+		width: 410px;
+	}
+}
+
+@media (min-width: 1601px) {
+	.swiper-navigation {
+		left: 240px;
+		width: 480px;
+	}
+}
+
