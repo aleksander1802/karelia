@@ -1,0 +1,36 @@
+@media (min-width: 1280px) {
+	.footer {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.footer__title {
+		width: 355px;
+	}
+
+	.footer__paragraph {
+		width: 315px;
+		grid-column: 1;
+		grid-row: 2;
+		align-self: end;
+	}
+
+	.footer__feedback {
+		width: 330px;
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.footer__year {
+		grid-column: 2;
+		grid-row: 2;
+		align-self: end;
+	}
+
+	.footer__links {
+		grid-column: 3;
+		grid-row: 1 / 3;
+		justify-self: end;
+	}
+}

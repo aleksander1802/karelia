@@ -16,7 +16,7 @@ import SpaHouseSlider from './components/sliders/spa-house-slider/SpaHouseSlider
 export default function Home() {
 	return (
 		<main className='relative'>
-			<Menu />
+			{/* <Menu />
 			<Estate />
 			<ReelsSlider />
 			<MasterHouse />
@@ -28,7 +28,7 @@ export default function Home() {
 			<NatureSecondSlider />
 			<GuestHouse />
 			<Territory />
-			<EsatetLocation />
+			<EsatetLocation /> */}
 			<Footer />
 		</main>
 	);
