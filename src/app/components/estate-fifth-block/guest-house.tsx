@@ -2,16 +2,39 @@ import GuestHouseSlider from '../sliders/guest-house-slider/GuestHouseSlider';
 
 export default function GuestHouse() {
 	return (
-		<div className="flex flex-row gap-[20px] mt-[243px] pt-[188px] pl-[220px] pb-[216px] border-y-[1px] border-secondary_slider " id='Гостевой дом'>
-			<div >
-				<div className="flex flex-col justify-between h-[660px] w-[357px] ">
-					<h2 className="font-mirra text-[90px] leading-[96%] ">
+		<div
+			className="flex flex-row gap-[20px] 
+		xl:mt-[243px] lg:mt-[185px]
+		xl:pt-[188px] lg:pt-[129px] 
+		xl:pl-[220px] lg:pl-[100px]
+		xl:pb-[216px] lg:pb-[135px] 
+		border-y-[1px] border-secondary_slider "
+			id="Гостевой дом"
+		>
+			<div>
+				<div
+					className="flex flex-col justify-between 
+				xl:h-[660px] lg2:h-[560px] lg:h-[515px]
+				xl:w-[357px] lg:w-[277px]
+				"
+				>
+					<h2
+						className="font-mirra 
+					xl:text-[90px] lg:text-[78px]
+					leading-[96%] "
+					>
 						Guest house
 					</h2>
 
 					<div className="flex flex-col">
-						<span className="font-poiret text-[65px]">2a</span>
-						<p>
+						<span
+							className="font-poiret 
+						xl:text-[65px] lg:text-[56px]
+						"
+						>
+							2a
+						</span>
+						<p className="xl:text-[20px] lg:text-[16px]">
 							Комфортабельные номера <br /> со всеми удобствами{' '}
 							<br /> и отдельными санузлами
 						</p>
@@ -19,9 +42,7 @@ export default function GuestHouse() {
 				</div>
 			</div>
 
-			
-				<GuestHouseSlider />
-			
+			<GuestHouseSlider />
 		</div>
 	);
 }

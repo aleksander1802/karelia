@@ -25,22 +25,16 @@ const serviceData = [
 ];
 
 function GuestHouseSlider() {
-	const slideWidthHeight = 655;
 	const activeSlideWidth = 733;
-
-	const slideStyle = {
-		width: 'auto',
-		height: slideWidthHeight || 655,
-	};
-
-	const activeSlideStyle = {
-		width: '100%' || 733,
-		height: slideWidthHeight || 655,
-	};
+	const slideWidthHeight = 655;
 
 	return (
 		<div className="flex flex-row gap-[18px] select-none">
-			<div className="w-[733px]">
+			<div
+				className="
+			xl:w-[733px] lg2:w-[680px] lg:w-[573px]
+			"
+			>
 				<Swiper
 					modules={[Navigation, A11y]}
 					slidesPerView={1}
@@ -55,13 +49,16 @@ function GuestHouseSlider() {
 						<SwiperSlide key={index}>
 							<Image
 								src={item.image}
-								width={activeSlideWidth}
-								height={slideWidthHeight}
+								width={activeSlideWidth || 733}
+								height={slideWidthHeight || 733}
 								alt={`Nature second slider image ${index}`}
 								style={{
-									...activeSlideStyle,
 									objectFit: 'cover',
 								}}
+								className="
+								w-full
+								xl:h-[655px] lg2:h-[560px] lg:h-[515px]
+								"
 							/>
 						</SwiperSlide>
 					))}
@@ -76,7 +73,7 @@ function GuestHouseSlider() {
 				</Swiper>
 			</div>
 
-			<div className="w-[615px]">
+			<div className="xl:w-[615px] lg2:w-[560px] lg:w-[400px]">
 				<Swiper
 					modules={[Navigation, A11y]}
 					spaceBetween={18}
@@ -93,13 +90,16 @@ function GuestHouseSlider() {
 						<SwiperSlide key={index}>
 							<Image
 								src={item.image}
-								width={slideWidthHeight}
-								height={slideWidthHeight}
+								width={activeSlideWidth}
+								height={activeSlideWidth}
 								alt={`Nature second slider image ${index}`}
 								style={{
-									...slideStyle,
 									objectFit: 'cover',
 								}}
+								className="
+								w-full
+								xl:h-[655px] lg2:h-[560px] lg:h-[515px]
+								"
 							/>
 						</SwiperSlide>
 					))}

@@ -1,13 +1,3 @@
-.control {
-	margin-top: 18px;
-	padding-left: 214px;
-	padding-right: 220px;
-	height: max-content;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
 .swiper-button-next:disabled,
 .swiper-button-prev:disabled {
 	opacity: 0.35;
@@ -36,3 +26,26 @@
 	left: 31px;
 	z-index: 1000;
 }
+
+@media (min-width: 1280px) {
+	
+	.swiper-navigation {
+		width: 510px;
+		bottom: 70px;
+	}
+}
+
+@media (min-width: 1400px) {
+	
+	.swiper-navigation {
+		width: 620px;
+	}
+}
+
+@media (min-width: 1601px) {
+	
+	.swiper-navigation {
+		width: 676px;
+	}
+}
+
