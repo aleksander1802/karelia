@@ -16,9 +16,9 @@ import SpaHouseSlider from './components/sliders/spa-house-slider/SpaHouseSlider
 export default function Home() {
 	return (
 		<main className='relative'>
-			<Menu />
-			<Estate />
-			{/* <ReelsSlider /> */}
+			{/* <Menu /> */}
+			{/* <Estate /> */}
+			<ReelsSlider />
 			{/* <MasterHouse /> */}
 			{/* <MasterHouseSlider /> */}
 			{/* <SpaHouse /> */}

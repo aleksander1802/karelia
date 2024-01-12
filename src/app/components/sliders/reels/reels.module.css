@@ -1,5 +1,4 @@
 .control {
-	width: 1500px;
 	height: max-content;
 	display: flex;
 	flex-direction: row;
@@ -32,31 +31,29 @@
 	position: relative;
 }
 
-@media (min-width: 1280px) {
-	.control {
-		width: 1166px;
-	}
+.swiper-navigation {
+	width: 260px;
+}
 
+@media (min-width: 745px) {
+	.swiper-navigation {
+		width: 260px;
+	}
+}
+
+@media (min-width: 1280px) {
 	.swiper-navigation {
 		width: 260px;
 	}
 }
 
 @media (min-width: 1400px) {
-	.control {
-		width: 1350px;
-	}
-
 	.swiper-navigation {
 		width: 310px;
 	}
 }
 
 @media (min-width: 1601px) {
-	.control {
-		width: 1500px;
-	}
-
 	.swiper-navigation {
 		width: 355px;
 	}
