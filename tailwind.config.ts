@@ -21,6 +21,7 @@ const config: Config = {
 				accent: '#805140',
 				accent_light: '#aa6d57',
 				accent_slider: '#c76b4f',
+				accent_input: '#151E2D',
 				font_light: '#E6E6E6',
 			},
 			backgroundImage: {

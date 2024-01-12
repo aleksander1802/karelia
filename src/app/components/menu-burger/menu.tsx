@@ -24,7 +24,7 @@ export default function Menu() {
 		: 'absolute left-[5rem] top-[-544px] duration-300';
 
 	return (
-		<div className="fixed top-0 index left-0 w-full">
+		<div className="fixed top-0 index left-[30px] sm:left-[43px] lg:left-[100px] xl:left-0 w-full">
 			<button
 				type="button"
 				className="absolute top-0 left-0 w-[72px] h-[67px] bg-accent z-100 outline-none flex flex-col items-center justify-center gap-[8px]"

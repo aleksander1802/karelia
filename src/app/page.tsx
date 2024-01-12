@@ -16,20 +16,20 @@ import SpaHouseSlider from './components/sliders/spa-house-slider/SpaHouseSlider
 export default function Home() {
 	return (
 		<main className='relative'>
-			{/* <Menu />
+			<Menu />
 			<Estate />
-			<ReelsSlider />
-			<MasterHouse />
-			<MasterHouseSlider />
-			<SpaHouse />
-			<SpaHouseSlider />
-			<Nature />
-			<NatureFirstSlider />
-			<NatureSecondSlider />
-			<GuestHouse />
-			<Territory />
-			<EsatetLocation /> */}
-			<Footer />
+			{/* <ReelsSlider /> */}
+			{/* <MasterHouse /> */}
+			{/* <MasterHouseSlider /> */}
+			{/* <SpaHouse /> */}
+			{/* <SpaHouseSlider /> */}
+			{/* <Nature /> */}
+			{/* <NatureFirstSlider /> */}
+			{/* <NatureSecondSlider /> */}
+			{/* <GuestHouse /> */}
+			{/* <Territory /> */}
+			{/* <EsatetLocation /> */}
+			{/* <Footer /> */}
 		</main>
 	);
 }
