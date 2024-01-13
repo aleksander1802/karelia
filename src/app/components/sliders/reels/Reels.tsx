@@ -87,17 +87,17 @@ function ReelsSlider() {
 					className={`${styles['swiper-navigation']} h-full pt-[10px] lg2:pt-[20px] xl:pt-[43px]`}
 				>
 					<div className={styles['swiper-button-prev']}>
-						<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] sm:block hidden " />
+						<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] sm:block hidden" />
 					</div>
 					<div className={styles['swiper-button-next']}>
 						<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] sm:block hidden" />
 					</div>
 					<div
 						className="absolute 
-					xl:-bottom-[65%] lg:-bottom-[165%] sm:-bottom-[165%] -bottom-[765%]
-					sm:right-1/2 
-					sm:translate-x-[50%] translate-x-0
-					"
+						xl:-bottom-[65%] lg:-bottom-[165%] sm:-bottom-[165%] -bottom-[765%]
+						sm:right-1/2 
+						sm:translate-x-[50%] translate-x-0
+						"
 					>
 						<LogoLink
 							className="

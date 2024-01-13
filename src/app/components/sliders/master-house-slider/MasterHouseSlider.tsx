@@ -1,12 +1,16 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y, Navigation, Pagination } from 'swiper/modules';
+import { A11y, Controller, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './master-house-slider.module.css';
+import { useState } from 'react';
+import 'swiper/css';
 
-const serviceData = [
+import type { Swiper as SwiperType } from 'swiper';
+
+const serviceData1 = [
 	{
 		link: '/images/master_house/slider_first.jpg',
 	},
@@ -18,6 +22,30 @@ const serviceData = [
 	},
 ];
 
+const serviceData2 = [
+	{
+		link: '/images/master_house/master_house.png',
+	},
+	{
+		link: '/images/master_house/slider_third.png',
+	},
+	{
+		link: '/images/master_house/slider_first.jpg',
+	},
+];
+
+const serviceData3 = [
+	{
+		link: '/images/master_house/slider_third.png',
+	},
+	{
+		link: '/images/master_house/slider_first.jpg',
+	},
+	{
+		link: '/images/master_house/master_house.png',
+	},
+];
+
 function MasterHouseSlider() {
 	const slideWidth = 580;
 	const slideHeight = 576;
@@ -25,42 +53,56 @@ function MasterHouseSlider() {
 	const activeSlideWidth = 736;
 	const activeSlideHeight = 612;
 
+	const [firstSwiper, setFirstSwiper] = useState<SwiperType | null>();
+	const [secondSwiper, setSecondSwiper] = useState<SwiperType | null>();
+	const [thirdSwiper, setThirdSwiper] = useState<SwiperType | null>();
+
 	return (
-		<div className="relative flex flex-row xl:mt-[873px] lg:mt-[704px] items-center justify-center">
-			<span className='
-			absolute
-			xl:-top-[250px] lg:-top-[200px]
-			xl:left-[220px] lg:left-[95px]
-			font-mirra
-			text-secondary_slider
-			xl:text-[538px] lg:text-[428px] 
-			leading-[50%]
-			select-none
-			'>M</span>
-			<div className="xl:w-[584px] lg:w-[389px] lg2:w-[502px]">
+		<div
+			className="relative flex flex-row 
+			xl:mt-[873px] lg:mt-[704px] sm:mt-[613px] mt-[942px]
+			items-center justify-center
+			select-none"
+		>
+			<span
+				className="
+				absolute
+				xl:-top-[250px] lg:-top-[200px] sm:top-[-215px] -top-[156px]
+				xl:left-[220px] lg:left-[95px] left-[45px]
+				font-mirra
+				text-secondary_slider
+				xl:text-[538px] sm:text-[428px] text-[332px]
+				leading-[50%]
+				select-none
+				"
+			>
+				M
+			</span>
+
+			<div className="xl:w-[584px] lg:w-[389px] lg2:w-[502px] sm:w-[44px] w-[30px]">
 				<Swiper
-					modules={[Navigation, Pagination, A11y]}
+					modules={[Pagination, A11y, Controller]}
 					slidesPerView={1}
-					initialSlide={0}
-					speed={1000}
 					loop
-					slideNextClass={styles['next-slide']}
 					allowTouchMove={false}
+					onSwiper={setFirstSwiper}
 					pagination={{
 						type: 'fraction',
 						el: `.${styles['swiper-pagination']}`,
 						clickable: true,
+
 						formatFractionCurrent: (number) =>
 							number > 9 ? number : '0' + number,
 						formatFractionTotal: (number) =>
 							number > 9 ? number : '0' + number,
 					}}
-					navigation={{
-						nextEl: `.${styles['swiper-button-next']}`,
-						prevEl: `.${styles['swiper-button-prev']}`,
-					}}
+
+					// navigation={{
+					// 	nextEl: `.${styles['swiper-button-next']}`,
+					// 	prevEl: `.${styles['swiper-button-prev']}`,
+					// }}
 				>
-					{serviceData.map((item, index) => (
+					{serviceData1.map((item, index) => (
 						<SwiperSlide key={index}>
 							<Image
 								src={item.link}
@@ -70,31 +112,32 @@ function MasterHouseSlider() {
 								style={{
 									objectFit: 'cover',
 								}}
-								className="w-full
-								xl:h-[576px] 
-								lg:h-[448px]"
+								className="w-full opacity-[0.4]
+								xl:h-[576px] lg:h-[448px] sm:h-[516px] h-[309px]"
 							/>
 						</SwiperSlide>
 					))}
 				</Swiper>
 			</div>
 
-			<div className={`relative flex flex-col xl:w-[736px] lg:w-[573px]`}>
-				<div className="relative ">
+			<div
+				className={`relative flex flex-col xl:w-[736px] lg:w-[573px] sm:w-[659px] w-[330px]`}
+			>
+				<div className="relative">
 					<Swiper
-						modules={[Navigation, A11y]}
-						slidesPerView={1}
-						initialSlide={1}
-						speed={1000}
+						modules={[Navigation, A11y, Controller]}
 						loop
-						slideNextClass={styles['next-slide']}
-						allowTouchMove={false}
+						onSwiper={setSecondSwiper}
+						controller={{
+							control: firstSwiper &&
+								thirdSwiper && [firstSwiper, thirdSwiper],
+						}}
 						navigation={{
 							nextEl: `.${styles['swiper-button-next']}`,
 							prevEl: `.${styles['swiper-button-prev']}`,
 						}}
 					>
-						{serviceData.map((item, index) => (
+						{serviceData2.map((item, index) => (
 							<SwiperSlide key={index}>
 								<Image
 									src={item.link}
@@ -104,8 +147,8 @@ function MasterHouseSlider() {
 									style={{
 										objectFit: 'cover',
 									}}
-									className="w-full xl:h-[612px] 
-								 lg:h-[477px]"
+									className="w-full 
+									xl:h-[612px] lg:h-[477px] sm:h-[548px] h-[328px]"
 								/>
 							</SwiperSlide>
 						))}
@@ -113,21 +156,15 @@ function MasterHouseSlider() {
 				</div>
 			</div>
 
-			<div className="xl:w-[584px] lg:w-[396px] lg2:w-[502px]">
+			<div className="xl:w-[584px] lg:w-[396px] lg2:w-[502px] sm:w-[44px] w-[30px]">
 				<Swiper
-					modules={[Navigation, A11y]}
+					modules={[A11y, Controller]}
 					slidesPerView={1}
-					initialSlide={2}
-					speed={1000}
 					loop
-					slideNextClass={styles['next-slide']}
 					allowTouchMove={false}
-					navigation={{
-						nextEl: `.${styles['swiper-button-next']}`,
-						prevEl: `.${styles['swiper-button-prev']}`,
-					}}
+					onSwiper={setThirdSwiper}
 				>
-					{serviceData.map((item, index) => (
+					{serviceData3.map((item, index) => (
 						<SwiperSlide key={index}>
 							<Image
 								src={item.link}
@@ -137,9 +174,8 @@ function MasterHouseSlider() {
 								style={{
 									objectFit: 'cover',
 								}}
-								className="w-full 
-								xl:h-[576px] 
-								lg:h-[448px]"
+								className="w-full opacity-[0.4]
+								xl:h-[576px] lg:h-[448px] sm:h-[516px] h-[309px]"
 							/>
 						</SwiperSlide>
 					))}
@@ -149,22 +185,22 @@ function MasterHouseSlider() {
 			<div className={styles.control}>
 				<div
 					className="
-				xl:w-[732px] lg:w-[579px] lg2:w-[702px]
-				flex flex-row justify-between items-start"
+					xl:w-[732px] lg:w-[579px] lg2:w-[702px]
+					flex flex-row justify-between items-start"
 				>
 					<p
-						className="
-					xl:w-[230px] lg:w-[178px]
-					xl:text-[70px] lg:text-[50px] 
-					leading-[60%]
-					 text-accent font-poiret"
+						className="hidden lg:block
+						xl:w-[230px] lg:w-[178px]
+						xl:text-[70px] lg:text-[50px] 
+						leading-[60%]
+						text-accent font-poiret"
 					>
 						Private lounge space
 					</p>
 					<p
 						className="
-						xl:w-[356px] lg:w-[301px]  
-						xl:text-[20px] lg:text-[16px]"
+						xl:w-[356px] w-[301px]  
+						xl:text-[20px] text-[16px]"
 					>
 						Уютная усадьба в атмосфере первозданной природы, укрытая
 						природой от окружения.
@@ -173,23 +209,26 @@ function MasterHouseSlider() {
 
 				<div
 					className="pagination 
-				xl:w-[356px] lg:w-[276px]
-				leading-[80%]
-				xl:text-[66px] lg:text-[48px] 
-				flex justify-end
-				font-poiret 
-				select-none"
+					hidden 
+					xl:w-[356px] lg:w-[276px]
+					leading-[80%]
+					xl:text-[66px] text-[48px] 
+					sm:flex justify-end
+					font-poiret 
+					select-none"
 				>
-					<div className={styles['swiper-pagination']}></div>
+					<div
+						className={`${styles['swiper-pagination']} text-secondary_slider w-max`}
+					></div>
 				</div>
 			</div>
 
 			<div className={`${styles['swiper-navigation']} z-100`}>
 				<div className={styles['swiper-button-prev']}>
-					<NavigationArrow />
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] sm:block hidden" />
 				</div>
 				<div className={styles['swiper-button-next']}>
-					<NavigationArrow />
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] sm:block hidden" />
 				</div>
 			</div>
 		</div>

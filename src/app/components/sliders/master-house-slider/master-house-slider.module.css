@@ -5,8 +5,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-left: 221px;
-	padding-right: 219px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-top: 1rem;
 	position: absolute;
 	bottom: -25%;
@@ -52,6 +52,18 @@
 	z-index: 1000;
 }
 
+@media (min-width: 745px) {
+	.control {
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-top: 0;
+		bottom: -18%;
+	}
+	.swiper-navigation {
+		width: 640px;
+	}
+}
+
 @media (min-width: 1280px) {
 	.control {
 		padding-left: 110px;
@@ -80,3 +92,4 @@
 		width: 860px;
 	}
 }
+

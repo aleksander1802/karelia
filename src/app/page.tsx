@@ -17,18 +17,18 @@ export default function Home() {
 	return (
 		<main className='relative'>
 			{/* <Menu /> */}
-			{/* <Estate /> */}
+			<Estate />
 			<ReelsSlider />
 			{/* <MasterHouse /> */}
-			{/* <MasterHouseSlider /> */}
+			<MasterHouseSlider />
 			{/* <SpaHouse /> */}
-			{/* <SpaHouseSlider /> */}
+			<SpaHouseSlider />
 			{/* <Nature /> */}
-			{/* <NatureFirstSlider /> */}
-			{/* <NatureSecondSlider /> */}
-			{/* <GuestHouse /> */}
+			<NatureFirstSlider />
+			<NatureSecondSlider />
+			<GuestHouse />
 			{/* <Territory /> */}
-			{/* <EsatetLocation /> */}
+			<EsatetLocation />
 			{/* <Footer /> */}
 		</main>
 	);
