@@ -8,7 +8,7 @@ export default function SpaHouseTub() {
 		<div
 			className="
 			flex flex-col justify-between 
-			xl:h-[853px] lg:h-[663px]
+			xl:h-[853px] lg:h-[663px] sm:h-[611px] h-[475px]
 		"
 		>
 			<Image
@@ -18,12 +18,15 @@ export default function SpaHouseTub() {
 				alt="Spa house tub"
 				className="z-30 
 				xl:w-[606px] xl:h-[807px] 
-				lg:w-[474px] lg:h-[631px]"
+				lg:w-[474px] lg:h-[631px]
+				sm:w-[435px] sm:h-[679px]
+				w-[333px] h-[443px]
+				"
 			/>
 			<p
 				className="
-			xl:w-[187px] lg:w-[149px]
-			xl:text-[20px] lg:text-[16px]
+				xl:w-[187px] w-[149px]
+				xl:text-[20px] text-[16px]
 			"
 			>
 				Открытая джакузи

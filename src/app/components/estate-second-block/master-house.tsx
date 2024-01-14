@@ -88,7 +88,8 @@ export default function MasterHouse() {
 	return (
 		<div
 			className="master-house relative min-h-screen cursor-default 
-			xl:mt-[300px] lg:mt-[180px] sm:mt-[186px] mt-[105px]		
+			xl:mt-[300px] lg:mt-[180px] sm:mt-[186px] mt-[105px]	
+				
 			"
 			id="Основной дом"
 		>
@@ -289,13 +290,11 @@ export default function MasterHouse() {
 					xl:-tracking-[27px] lg:-tracking-[21px] sm:-tracking-[10px]
 					text-secondary_slider 
 					sm:-top-[105px] 
-					top-[680px] w-max
-					xl:-left-[41%] 
-					lg:-left-[41%] 
-					lg2:-left-[10%] 
-					sm:-left-[16%]
-					-left-1/2
-					-translate-x-[20%] z-0"
+					top-[680px] 
+					w-max
+					xl:-left-[41%] lg:-left-[41%] lg2:-left-[10%] sm:-left-[16%] -left-1/2
+					-translate-x-[20%] 
+					z-0"
 				>
 					Master house
 				</span>

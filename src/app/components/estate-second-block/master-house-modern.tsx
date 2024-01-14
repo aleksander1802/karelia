@@ -26,7 +26,7 @@ export default function MasterHouseModern() {
 				width={masterHouseModernWidth}
 				height={masterHouseModernHeight}
 				alt="Master house modern"
-				className="relative z-0 
+				className="relative z-20 
 				xl:w-[733px] xl:h-[619px] 
 				lg:w-[572px] lg:h-[483px]
 				sm:w-[435px] sm:h-[367px]

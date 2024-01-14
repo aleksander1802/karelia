@@ -6,43 +6,41 @@ import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './master-house-slider.module.css';
 import { useState } from 'react';
-import 'swiper/css';
-
 import type { Swiper as SwiperType } from 'swiper';
 
 const serviceData1 = [
 	{
-		link: '/images/master_house/slider_first.jpg',
+		image: '/images/master_house/slider_first.jpg',
 	},
 	{
-		link: '/images/master_house/master_house.png',
+		image: '/images/master_house/master_house.png',
 	},
 	{
-		link: '/images/master_house/slider_third.png',
+		image: '/images/master_house/slider_third.png',
 	},
 ];
 
 const serviceData2 = [
 	{
-		link: '/images/master_house/master_house.png',
+		image: '/images/master_house/master_house.png',
 	},
 	{
-		link: '/images/master_house/slider_third.png',
+		image: '/images/master_house/slider_third.png',
 	},
 	{
-		link: '/images/master_house/slider_first.jpg',
+		image: '/images/master_house/slider_first.jpg',
 	},
 ];
 
 const serviceData3 = [
 	{
-		link: '/images/master_house/slider_third.png',
+		image: '/images/master_house/slider_third.png',
 	},
 	{
-		link: '/images/master_house/slider_first.jpg',
+		image: '/images/master_house/slider_first.jpg',
 	},
 	{
-		link: '/images/master_house/master_house.png',
+		image: '/images/master_house/master_house.png',
 	},
 ];
 
@@ -74,7 +72,7 @@ function MasterHouseSlider() {
 				xl:text-[538px] sm:text-[428px] text-[332px]
 				leading-[50%]
 				select-none
-				"
+				z-0"
 			>
 				M
 			</span>
@@ -90,22 +88,18 @@ function MasterHouseSlider() {
 						type: 'fraction',
 						el: `.${styles['swiper-pagination']}`,
 						clickable: true,
-
 						formatFractionCurrent: (number) =>
 							number > 9 ? number : '0' + number,
 						formatFractionTotal: (number) =>
 							number > 9 ? number : '0' + number,
 					}}
 
-					// navigation={{
-					// 	nextEl: `.${styles['swiper-button-next']}`,
-					// 	prevEl: `.${styles['swiper-button-prev']}`,
-					// }}
+					
 				>
 					{serviceData1.map((item, index) => (
 						<SwiperSlide key={index}>
 							<Image
-								src={item.link}
+								src={item.image}
 								width={slideWidth || 580}
 								height={slideHeight || 576}
 								alt={`Spa house slider image ${index}`}
@@ -121,7 +115,7 @@ function MasterHouseSlider() {
 			</div>
 
 			<div
-				className={`relative flex flex-col xl:w-[736px] lg:w-[573px] sm:w-[659px] w-[330px]`}
+				className='relative flex flex-col xl:w-[736px] lg:w-[573px] sm:w-[659px] w-[330px]'
 			>
 				<div className="relative">
 					<Swiper
@@ -140,7 +134,7 @@ function MasterHouseSlider() {
 						{serviceData2.map((item, index) => (
 							<SwiperSlide key={index}>
 								<Image
-									src={item.link}
+									src={item.image}
 									width={activeSlideWidth || 736}
 									height={activeSlideHeight || 612}
 									alt={`Spa house slider image ${index}`}
@@ -167,7 +161,7 @@ function MasterHouseSlider() {
 					{serviceData3.map((item, index) => (
 						<SwiperSlide key={index}>
 							<Image
-								src={item.link}
+								src={item.image}
 								width={slideWidth}
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
