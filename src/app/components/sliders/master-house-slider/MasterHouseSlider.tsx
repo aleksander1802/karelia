@@ -52,7 +52,6 @@ function MasterHouseSlider() {
 	const activeSlideHeight = 612;
 
 	const [firstSwiper, setFirstSwiper] = useState<SwiperType | null>();
-	const [secondSwiper, setSecondSwiper] = useState<SwiperType | null>();
 	const [thirdSwiper, setThirdSwiper] = useState<SwiperType | null>();
 
 	return (
@@ -93,8 +92,6 @@ function MasterHouseSlider() {
 						formatFractionTotal: (number) =>
 							number > 9 ? number : '0' + number,
 					}}
-
-					
 				>
 					{serviceData1.map((item, index) => (
 						<SwiperSlide key={index}>
@@ -114,14 +111,11 @@ function MasterHouseSlider() {
 				</Swiper>
 			</div>
 
-			<div
-				className='relative flex flex-col xl:w-[736px] lg:w-[573px] sm:w-[659px] w-[330px]'
-			>
+			<div className="relative flex flex-col xl:w-[736px] lg:w-[573px] sm:w-[659px] w-[330px]">
 				<div className="relative">
 					<Swiper
 						modules={[Navigation, A11y, Controller]}
 						loop
-						onSwiper={setSecondSwiper}
 						controller={{
 							control: firstSwiper &&
 								thirdSwiper && [firstSwiper, thirdSwiper],

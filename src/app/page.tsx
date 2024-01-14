@@ -21,10 +21,10 @@ export default function Home() {
 			{/* <ReelsSlider /> */}
 			{/* <MasterHouse /> */}
 			{/* <MasterHouseSlider /> */}
-			<SpaHouse />
-			<SpaHouseSlider />
+			{/* <SpaHouse /> */}
+			{/* <SpaHouseSlider /> */}
 			{/* <Nature /> */}
-			{/* <NatureFirstSlider /> */}
+			<NatureFirstSlider />
 			{/* <NatureSecondSlider /> */}
 			{/* <GuestHouse /> */}
 			{/* <Territory /> */}

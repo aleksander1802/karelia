@@ -52,11 +52,10 @@ function SpaHouseSlider() {
 	const activeSlideHeight = 612;
 
 	const [firstSwiper, setFirstSwiper] = useState<SwiperType | null>();
-	const [secondSwiper, setSecondSwiper] = useState<SwiperType | null>();
 	const [thirdSwiper, setThirdSwiper] = useState<SwiperType | null>();
 
 	return (
-		<div className="relative flex flex-row lg:mt-[873px] mt-[800px] items-center justify-center">
+		<div className="relative flex flex-row lg:mt-[873px] mt-[800px] items-center justify-center select-none">
 			<div
 				className="
 				xl:w-[584px] lg:w-[389px] lg2:w-[502px] sm:w-[44px] w-[30px]

@@ -1,14 +1,14 @@
 .control {
-	width: 1450px;
+	width: max-content;
 	height: max-content;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	justify-content: space-between;
 }
 
 .swiper-navigation {
 	position: relative;
-	width: 355px;
+	width: max-content;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -32,9 +32,15 @@
 	position: relative;
 }
 
+.fillArrow {
+	fill: #805140;
+}
+
+
 @media (min-width: 1280px) {
 	.control {
 		width: 1090px;
+		flex-direction: row;
 	}
 	.swiper-navigation {
 		width: 275px;
