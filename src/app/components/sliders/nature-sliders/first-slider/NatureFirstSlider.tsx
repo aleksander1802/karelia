@@ -38,19 +38,18 @@ function NatureFirstSlider() {
 			<div className="relative">
 				<Swiper
 					modules={[Navigation, Pagination, Controller]}
-					
 					breakpoints={{
 						390: {
 							slidesPerView: 1.1,
-							spaceBetween: 12
+							spaceBetween: 12,
 						},
 						745: {
 							slidesPerView: 1.8,
-							spaceBetween: 20
+							spaceBetween: 20,
 						},
 						746: {
 							slidesPerView: 3.5,
-							spaceBetween: 20
+							spaceBetween: 20,
 						},
 					}}
 					freeMode
@@ -90,7 +89,9 @@ function NatureFirstSlider() {
 			</div>
 
 			<div className={styles.control}>
-				<div className={`${styles['swiper-navigation']} lg:block hidden`}>
+				<div
+					className={`${styles['swiper-navigation']} lg:block hidden`}
+				>
 					<div className={styles['swiper-button-prev']}>
 						<NavigationArrow className="fillArrow xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden" />
 					</div>
@@ -98,14 +99,16 @@ function NatureFirstSlider() {
 						<NavigationArrow className="fillArrow xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden" />
 					</div>
 				</div>
-				<div className="pagination 
-				w-[356px] 
-				flex 
-				lg:justify-end justify-start
-				pr-[1rem] pt-[16px] 
-				font-poiret 
-				lg:text-[66px] sm:text-[48px] text-[44px]
-				select-none">
+				<div
+					className="pagination 
+					w-[356px] 
+					flex 
+					lg:justify-end justify-start
+					pr-[1rem] pt-[16px] 
+					font-poiret 
+					lg:text-[66px] sm:text-[48px] text-[44px]
+					select-none"
+				>
 					<div
 						className={`${styles['swiper-pagination']} z-10`}
 					></div>

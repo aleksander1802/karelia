@@ -1,11 +1,10 @@
-.control {
-	padding-right: 220px;
+.control {	
 	height: max-content;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	position: absolute;
-	bottom: 50px;
+	position: absolute;	
+	top: 350px;
 	right: 0;
 }
 
@@ -43,10 +42,18 @@
 	padding-top: 90px;
 }
 
+@media (min-width: 745px) {
+	.control {
+		padding-right: 40px;
+		top: 40px;
+	}
+}
+
 @media (min-width: 1280px) {
 	.control {
 		padding-right: 100px;
-		bottom: 70px;
+		top: 510px;
+		right: 0;
 	}
 	.swiper-navigation {
 		width: 1163px;
@@ -55,16 +62,18 @@
 }
 
 @media (min-width: 1400px) {
+	.control {
+		padding-right: 100px;
+	}
 	.swiper-navigation {
 		width: 1163px;
-		
 	}
 }
 
 @media (min-width: 1601px) {
 	.control {
 		padding-right: 220px;
-		bottom: 50px;
+		top: 610px;
 		right: 0;
 	}
 	.swiper-navigation {
