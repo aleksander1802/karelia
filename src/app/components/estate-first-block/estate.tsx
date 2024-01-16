@@ -34,17 +34,17 @@ export default function Estate() {
 
 				<h1
 					className="
-				xl:text-[198px] sm:text-[155px] text-[84px]
-				xl:mt-[415px] lg:mt-[207px] sm:mt-[84px] mt-[66px]
-				mb-[54px] sm:mb-[138px]
-				leading-[80%] 
-				lg:w-full sm:w-[659px]
-				lg:h-full sm:h-max h-[132px]			
-				-tracking-[5px] 
-				font-mirra flex 
-				lg:justify-between 
-				flex-wrap lg:flex-nowrap 
-				justify-center"
+					xl:text-[198px] sm:text-[155px] text-[84px]
+					xl:mt-[415px] lg:mt-[207px] sm:mt-[84px] mt-[66px]
+					mb-[54px] sm:mb-[138px]
+					leading-[80%] 
+					lg:w-full sm:w-[659px]
+					lg:h-full sm:h-max h-[132px]			
+					-tracking-[5px] 
+					font-mirra flex 
+					lg:justify-between 
+					flex-wrap lg:flex-nowrap 
+					justify-center"
 				>
 					<span>Усадьба</span>
 					<span

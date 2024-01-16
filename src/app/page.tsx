@@ -26,8 +26,8 @@ export default function Home() {
 			{/* <Nature /> */}
 			{/* <NatureFirstSlider /> */}
 			{/* <NatureSecondSlider /> */}
-			<GuestHouse />
-			{/* <Territory /> */}
+			{/* <GuestHouse /> */}
+			<Territory />
 			{/* <EsatetLocation /> */}
 			{/* <Footer /> */}
 		</main>

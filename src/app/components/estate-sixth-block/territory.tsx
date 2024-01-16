@@ -12,26 +12,39 @@ export default function Territory() {
 	return (
 		<div
 			className="relative 
-			xl:pl-[220px] lg:pl-[96px]
-			xl:pt-[146px] lg:pt-[145px]
-			xl:mb-[297px] lg:mb-[190px]"
+			xl:pl-[220px] lg:pl-[100px] sm:pl-[40px] pl-[30px]
+			xl:pt-[193px] lg:pt-[198px] sm:pt-[187px] pt-[250px]
+			xl:mb-[297px] lg:mb-[190px]
+			
+			"
 			id="Територия"
 		>
 			<div
-				className="flex flex-row justify-between 
-			xl:w-[671px] lg:w-[511px]
-			ml-[658px]
+				className="flex 
+				sm:flex-row flex-col
+				justify-between 
+				xl:pr-[280px] lg:pr-[130px] sm:pr-[43px]
+				sm:h-full h-[254px]
 			"
 			>
-				<LogoLink className="xl:w-[231px] xl:h-[231px] lg:w-[178px] lg:h-[178px]" />
-
+				<h2
+					className="					
+					font-mirra 
+					xl:text-[90px] sm:text-[78px] text-[70px]
+					leading-[96%] 
+					sm:-tracking-[4.5px] -tracking-[3px]"
+				>
+					НА территории
+				</h2>
 				<ul
-					className="flex flex-col 
-				xl:gap-[26px] lg:gap-[22px] 
-				xl:text-[24px] lg:text-[18px]
-				leading-[80%] 
-				font-extralight 
-				pt-[30px]"
+					className="relative z-50
+					flex flex-col 
+					lg:w-max sm:w-[206px]
+					xl:gap-[26px] gap-[22px] 
+					xl:text-[24px] text-[18px]
+					lineheight-normal
+					font-extralight 
+					"
 				>
 					{logoList.map((item, idx) => (
 						<li key={idx}>{item.title}</li>
@@ -39,39 +52,26 @@ export default function Territory() {
 				</ul>
 			</div>
 
-			<h2
-				className="absolute 
-			xl:top-[193px] lg:top-[199px]
-			font-mirra 
-			xl:text-[90px] lg:text-[78px]
-			leading-[96%] 
-			-tracking-[4.5px]"
-			>
-				НА территории
-			</h2>
-
-			<div
+			<LogoLink
 				className="
-				absolute top-[258px] left-0 
-				xl:w-[699px] lg2:w-[544px] lg:w-[475px] 
-				xl:h-[1208px] lg:h-[869px]
-			  bg-accent"
-			>
-				<p
-					className="absolute bottom-0 
-				xl:w-[409px] lg:w-[325px]
-				xl:left-[220px] lg:left-[136px] 
-				xl:text-[20px] lg:text-[16px]
-				pt-[297px] 
-				leading-[140%] 
+				xl:w-[231px] xl:h-[231px] 
+				lg:w-[178px] lg:h-[178px]
+				sm:w-[205px] sm:h-[205px]
+				w-[157px] h-[157px]
+				absolute z-50
+				xl:left-[973px] lg:top-[165px] sm:top-[281px] top-[390px]
+				xl:top-[156px] lg:left-[693px] sm:left-[270px] left-[279px]
 				"
-				>
-					Усадьба расположена на первой линии живописного озера
-					Ушкозера, напротив дачи Б.Н.Ельцина по воде
-				</p>
-			</div>
+			/>
 
 			<TerritorySlider />
+			<div
+				className="absolute left-0 z-0
+					xl:top-[258px] lg2:top-[255px] lg:top-[255px] sm:top-[243px] top-[302px]		 
+					xl:w-[699px] lg2:w-[552px] lg:w-[483px] sm:w-[360px] w-full
+					xl:h-[1208px] lg:h-[869px] sm:h-[980px] h-[895px]
+					bg-accent"
+			></div>
 		</div>
 	);
 }

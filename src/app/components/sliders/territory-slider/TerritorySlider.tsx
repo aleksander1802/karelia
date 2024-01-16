@@ -29,14 +29,26 @@ function TerritorySlider() {
 	const slideHeight = 614;
 
 	return (
-		<div className="relative 
-		xl:pt-[98px]  lg:pt-[58px]
-		xl:pl-0  lg:pl-[38px]  
-		select-none">
+		<div
+			className="relative z-50
+			xl:pt-[98px] lg:pt-[58px] sm:pt-[52px] pt-[48px]
+			xl:pl-0 lg:pl-[38px]  
+			select-none"
+		>
 			<Swiper
 				modules={[Navigation, Controller]}
-				slidesPerView={3.4}
-				spaceBetween={23}
+				slidesPerView={1.1}
+				spaceBetween={8}
+				breakpoints={{
+					400: {
+						slidesPerView: 1.6,
+						spaceBetween: 23,
+					},
+					746: {
+						slidesPerView: 3.4,
+						spaceBetween: 23,
+					},
+				}}
 				loop
 				navigation={{
 					nextEl: `.${styles['swiper-button-next']}`,
@@ -54,7 +66,7 @@ function TerritorySlider() {
 								objectFit: 'cover',
 							}}
 							className="w-full 
-							xl:h-[614px] lg:h-[481px]
+							xl:h-[614px] lg:h-[481px] sm:h-[555px] h-[425px]
 							"
 						/>
 					</SwiperSlide>
@@ -62,10 +74,10 @@ function TerritorySlider() {
 			</Swiper>
 			<div className={styles['swiper-navigation']}>
 				<div className={styles['swiper-button-prev']}>
-					<NavigationArrow />
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden"/>
 				</div>
 				<div className={styles['swiper-button-next']}>
-					<NavigationArrow />
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden"/>
 				</div>
 			</div>
 		</div>

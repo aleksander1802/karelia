@@ -72,17 +72,28 @@ export default function EsatetLocation() {
 		<div id="Расположение">
 			<div
 				className="
-			xl:pl-[220px] xl:pr-[220px]
-			lg:pl-[100px] lg:pr-[100px]
+				xl:pl-[220px] xl:pr-[220px]
+				lg:pl-[100px] lg:pr-[100px]
 			"
 			>
-				<h2
-					className="h2 
-				xl:pl-[745px] lg2:pl-[695px] lg:pl-[590px]
-				pt-[11px]"
-				>
-					Расположение
-				</h2>
+				<div className="flex flex-row justify-between">
+					<p
+						className="relative z-30
+							xl:w-[409px] lg:w-[325px]							 
+							xl:text-[20px] text-[16px]							
+							leading-[140%] 
+				"
+					>
+						Усадьба расположена на первой линии живописного озера
+						Ушкозера, напротив дачи Б.Н.Ельцина по воде
+					</p>
+
+					<h2
+						className="h2"
+					>
+						Расположение
+					</h2>
+				</div>
 
 				<LocationRange locationRange={locationRange} />
 			</div>
@@ -90,12 +101,12 @@ export default function EsatetLocation() {
 			<div className="relative mt-[196px]">
 				<div
 					className="absolute -top-1/2 -translate-y-1/2 
-				xl:left-[220px] lg:left-[100px] 
+					xl:left-[220px] lg:left-[100px] 
 				"
 				>
 					<div
 						className="flex flex-row bg-[#151E2D] 
-					xl:[&>div]:h-[74px] lg:[&>div]:h-[54px]
+						xl:[&>div]:h-[74px] lg:[&>div]:h-[54px]
 					"
 					>
 						<button
