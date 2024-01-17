@@ -223,7 +223,7 @@ export default function EsateLocation() {
 				className="location-estate lg:bg-contain bg-cover
 				lg:block flex
 				flex-col items-center
-				xl:pt-[164px] lg:pt-[82px] lg2:pt-[142px] sm:pt-[74px] pt-[82px]
+				xl:pt-[152px] lg:pt-[82px] lg2:pt-[142px] sm:pt-[74px] pt-[82px]
 				xl:pb-[141px] lg:pb-[100px] lg2:pb-[142px] pb-[100px]
 				
 				"
