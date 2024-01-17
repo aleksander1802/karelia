@@ -243,8 +243,8 @@ export default function MasterHouse() {
 					alt="Master house"
 					className="
 					xl:w-[972px] xl:h-[1049px] 
-					lg2:w-[750px] lg2:h-[783px] 
-					lg:w-[698px] lg:h-[743px]
+					lg2:w-[733px] lg2:h-[783px] 
+					lg:w-[680px] lg:h-[743px]
 					w-full sm:h-[809px]					
 					"
 				/>

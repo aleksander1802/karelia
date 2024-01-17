@@ -10,7 +10,7 @@ export default function MasterHouseHearth() {
 			className="absolute 
 			xl:top-[738px] lg:top-[489px] sm:top-[1270px] top-[660px]
 			sm:left-1/2 left-[120px]
-			xl:translate-x-4 lg:translate-x-3 lg2:-translate-x-10 sm:-translate-x-1/2			
+			xl:translate-x-4 lg:translate-x-1 lg2:-translate-x-12 sm:-translate-x-1/2			
 			flex flex-col 
 			xl:gap-[18px] gap-[10px] w-max
 		 "
