@@ -3,9 +3,9 @@ import GuestHouseSlider from '../sliders/guest-house-slider/GuestHouseSlider';
 export default function GuestHouse() {
 	return (
 		<div
-			className="flex 
+			className="flex relative
 			flex-row gap-[20px] 
-			xl:mt-[243px] lg2:mt-[165px] lg:mt-[135px] sm:mt-[212px] mt-[126px]			
+			xl:mt-[243px] lg2:mt-[165px] lg:mt-[135px] sm:mt-[102px] mt-[126px]			
 			xl:pt-[188px] lg:pt-[129px] sm:pt-[112px] pt-[151px]
 			xl:pl-[220px] lg:pl-[100px] sm:pl-[45px] pl-[30px]
 			xl:pb-[216px] lg:pb-[135px] sm:pb-[263px] pb-[244px]	

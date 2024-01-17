@@ -70,12 +70,13 @@ body {
 	background-color: var(--estate-background);
 	overflow-x: hidden;
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 .estate {
 	background: var(--estate-background-image);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .estate__form {

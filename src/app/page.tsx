@@ -14,6 +14,9 @@ import ReelsSlider from './components/sliders/reels/Reels';
 import SpaHouseSlider from './components/sliders/spa-house-slider/SpaHouseSlider';
 
 export default function Home() {
+
+	
+
 	return (
 		<main className="relative">
 			<Menu />

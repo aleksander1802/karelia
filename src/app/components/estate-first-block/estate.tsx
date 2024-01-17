@@ -7,14 +7,24 @@ const poiret = Poiret_One({ subsets: ['cyrillic'], weight: '400' });
 
 export default function Estate() {
 	return (
-		<div className="estate relative bg-cover bg-no-repeat bg-center text-3xl cursor-default overflow-hidden">
+		<div className="relative text-3xl cursor-default overflow-hidden">
+			<Image
+				src={'/images/estate/estate_background.png'}
+				width={1920}
+				height={2300}
+				alt="Main background image"
+				priority={true}
+				className="absolute top-0 left-0 
+				bg-contain bg-no-repeat bg-center -z-10"
+				style={{ width: '100%', height: 'auto' }}
+			/>
 			<section
-				className="
-			xl:p-[220px] xl:pt-[331px] 
-			lg:p-[100px] lg:pt-[184px]
-			sm:p-[43px] sm:pt-[434px]
-			p-[30px] pt-[331px]
-			pb-0 
+				className="z-50
+				xl:p-[220px] xl:pt-[331px] 
+				lg:p-[100px] lg:pt-[184px]
+				sm:p-[43px] sm:pt-[374px]				
+				p-[30px] pt-[201px]
+				pb-0 
 			"
 			>
 				<span className="absolute top-[30px] right-[217px] text-[20px] leading-[140%] hidden xl:block">
@@ -26,7 +36,7 @@ export default function Estate() {
 				xl:max-w-[418px] max-w-[294px] 
 				xl:text-[20px] text-[16px]
 				 text-font_light leading-[140%] border-l-2 
-				 xl:pl-[35px] pl-[29px]"
+				 xl:pl-[35px] pl-[29px] z-50"
 				>
 					Уютная усадьба в атмосфере первозданной природы, <br />{' '}
 					укрытая природой от окружения
@@ -35,7 +45,7 @@ export default function Estate() {
 				<h1
 					className="
 					xl:text-[198px] sm:text-[155px] text-[84px]
-					xl:mt-[415px] lg:mt-[207px] sm:mt-[84px] mt-[66px]
+					xl:mt-[330px] lg2:mt-[275px] lg:mt-[207px] sm:mt-[84px] mt-[66px]
 					mb-[54px] sm:mb-[138px]
 					leading-[80%] 
 					lg:w-full sm:w-[659px]
