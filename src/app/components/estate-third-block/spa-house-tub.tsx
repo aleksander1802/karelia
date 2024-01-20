@@ -12,7 +12,7 @@ export default function SpaHouseTub() {
 		"
 		>
 			<Image
-				src="/images/spa_house/spa_tub.png"
+				src="/karelia/images/spa_house/spa_tub.png"
 				width={spaHouseTubWidth || 606}
 				height={spaHouseTubHeight || 807}
 				alt="Spa house tub"
