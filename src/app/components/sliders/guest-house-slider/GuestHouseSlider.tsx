@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 const serviceData1 = [
 	{
-		image: '/karelia/karelia/images/guest_house/guest_house_first.png',
+		image: '/karelia/images/guest_house/guest_house_first.png',
 	},
 	{
 		image: '/karelia/images/guest_house/guest_house_second.png',
