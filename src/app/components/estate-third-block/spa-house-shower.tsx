@@ -18,7 +18,7 @@ export default function SpaHouseShower() {
 				Описание душа
 			</p>
 			<Image
-				src="/images/spa_house/spa_shower.png"
+				src="/karelia/images/spa_house/spa_shower.png"
 				width={spaHouseShowerWidth || 606}
 				height={spaHouseShowerHeight || 722}
 				alt="Spa house Shower"

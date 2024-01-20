@@ -10,37 +10,37 @@ import type { Swiper as SwiperType } from 'swiper';
 
 const serviceData1 = [
 	{
-		image: '/images/master_house/slider_first.jpg',
+		image: '/karelia/images/master_house/slider_first.jpg',
 	},
 	{
-		image: '/images/master_house/master_house.png',
+		image: '/karelia/images/master_house/master_house.png',
 	},
 	{
-		image: '/images/master_house/slider_third.png',
+		image: '/karelia/images/master_house/slider_third.png',
 	},
 ];
 
 const serviceData2 = [
 	{
-		image: '/images/master_house/master_house.png',
+		image: '/karelia/images/master_house/master_house.png',
 	},
 	{
-		image: '/images/master_house/slider_third.png',
+		image: '/karelia/images/master_house/slider_third.png',
 	},
 	{
-		image: '/images/master_house/slider_first.jpg',
+		image: '/karelia/images/master_house/slider_first.jpg',
 	},
 ];
 
 const serviceData3 = [
 	{
-		image: '/images/master_house/slider_third.png',
+		image: '/karelia/images/master_house/slider_third.png',
 	},
 	{
-		image: '/images/master_house/slider_first.jpg',
+		image: '/karelia/images/master_house/slider_first.jpg',
 	},
 	{
-		image: '/images/master_house/master_house.png',
+		image: '/karelia/images/master_house/master_house.png',
 	},
 ];
 

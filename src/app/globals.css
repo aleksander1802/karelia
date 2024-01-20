@@ -9,12 +9,12 @@
 
 @font-face {
 	font-family: 'Mirra Auriolic', sans-serif;
-	src: url('/fonts/mirra.otf');
+	src: url('/karelia/fonts/mirra.otf');
 }
 
 @font-face {
 	font-family: 'Poiret One', sans-serif;
-	src: url('/fonts/PoiretOne-Regular.ttf');
+	src: url('/karelia/fonts/PoiretOne-Regular.ttf');
 }
 
 :root {

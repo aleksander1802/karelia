@@ -10,37 +10,37 @@ import type { Swiper as SwiperType } from 'swiper';
 
 const serviceData1 = [
 	{
-		link: '/images/master_house/slider_first.jpg',
+		link: '/karelia/images/master_house/slider_first.jpg',
 	},
 	{
-		link: '/images/spa_house/spa_second_slider.png',
+		link: '/karelia/images/spa_house/spa_second_slider.png',
 	},
 	{
-		link: '/images/spa_house/spa_third_slider.png',
+		link: '/karelia/images/spa_house/spa_third_slider.png',
 	},
 ];
 
 const serviceData2 = [
 	{
-		link: '/images/spa_house/spa_second_slider.png',
+		link: '/karelia/images/spa_house/spa_second_slider.png',
 	},
 	{
-		link: '/images/spa_house/spa_third_slider.png',
+		link: '/karelia/images/spa_house/spa_third_slider.png',
 	},
 	{
-		link: '/images/master_house/slider_first.jpg',
+		link: '/karelia/images/master_house/slider_first.jpg',
 	},
 ];
 
 const serviceData3 = [
 	{
-		link: '/images/spa_house/spa_third_slider.png',
+		link: '/karelia/images/spa_house/spa_third_slider.png',
 	},
 	{
-		link: '/images/master_house/slider_first.jpg',
+		link: '/karelia/images/master_house/slider_first.jpg',
 	},
 	{
-		link: '/images/spa_house/spa_second_slider.png',
+		link: '/karelia/images/spa_house/spa_second_slider.png',
 	},
 ];
 

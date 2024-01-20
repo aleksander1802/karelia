@@ -16,7 +16,7 @@ export default function MasterHouseHearth() {
 		 "
 		>
 			<Image
-				src="/images/master_house/master_house_hearth.png"
+				src="/karelia/images/master_house/master_house_hearth.png"
 				width={masterHouseHearthWidth}
 				height={masterHouseHearthHeight}
 				alt="Master house hearth"

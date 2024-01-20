@@ -8,19 +8,19 @@ import styles from './nature-first-slider.module.css';
 
 const serviceData = [
 	{
-		image: '/images/nature_house/first_slider_first.png',
+		image: '/karelia/images/nature_house/first_slider_first.png',
 	},
 	{
-		image: '/images/nature_house/first_slider_second.png',
+		image: '/karelia/images/nature_house/first_slider_second.png',
 	},
 	{
-		image: '/images/nature_house/first_slider_third.png',
+		image: '/karelia/images/nature_house/first_slider_third.png',
 	},
 	{
-		image: '/images/nature_house/first_slider_fourth.png',
+		image: '/karelia/images/nature_house/first_slider_fourth.png',
 	},
 	{
-		image: '/images/nature_house/first_slider_fifth.jpg',
+		image: '/karelia/images/nature_house/first_slider_fifth.jpg',
 	},
 ];
 

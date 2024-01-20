@@ -237,7 +237,7 @@ export default function MasterHouse() {
 				relative z-0"
 			>
 				<Image
-					src="/images/master_house/master_house.png"
+					src="/karelia/images/master_house/master_house.png"
 					width={masterHouseWidth}
 					height={masterHouseHeight}
 					alt="Master house"
@@ -250,7 +250,7 @@ export default function MasterHouse() {
 				/>
 				<div>
 					<Image
-						src="/images/master_house/master_house_fence.png"
+						src="/karelia/images/master_house/master_house_fence.png"
 						width={masterHouseFenceWidth}
 						height={masterHouseFenceHeight}
 						alt="Master house fense"
@@ -307,7 +307,7 @@ export default function MasterHouse() {
 					sm:items-center sm:gap-0 gap-[10px]"
 				>
 					<Image
-						src="/images/master_house/master_house_glasshouse.png"
+						src="/karelia/images/master_house/master_house_glasshouse.png"
 						width={607}
 						height={811}
 						alt="Master house glasshouse"

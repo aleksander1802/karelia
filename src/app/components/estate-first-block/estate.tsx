@@ -9,7 +9,7 @@ export default function Estate() {
 	return (
 		<div className="relative text-3xl cursor-default overflow-hidden">
 			<Image
-				src={'/images/estate/estate_background.png'}
+				src={'/karelia/images/estate/estate_background.png'}
 				width={1920}
 				height={2300}
 				alt="Main background image"
@@ -298,7 +298,7 @@ export default function Estate() {
 			</div>
 
 			<Image
-				src={'/images/estate/tree.png'}
+				src={'/karelia/images/estate/tree.png'}
 				width={1120}
 				height={797}
 				alt="tree"

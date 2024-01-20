@@ -18,7 +18,7 @@ export default function SpaHouse() {
 			"
 		>
 			<Image
-				src="/images/spa_house/spa_tree.png"
+				src="/karelia/images/spa_house/spa_tree.png"
 				width={treeWidth || 408}
 				height={treeHeight || 328}
 				alt="Spa house tree"

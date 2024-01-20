@@ -22,7 +22,7 @@ export default function MasterHouseModern() {
 			</p>
 
 			<Image
-				src="/images/master_house/master_house_tv.png"
+				src="/karelia/images/master_house/master_house_tv.png"
 				width={masterHouseModernWidth}
 				height={masterHouseModernHeight}
 				alt="Master house modern"

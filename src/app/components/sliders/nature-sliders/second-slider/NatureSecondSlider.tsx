@@ -8,36 +8,36 @@ import styles from './nature-second-slider.module.css';
 
 const serviceData = [
 	{
-		'first-image': '/images/nature_house/second_slider_first.png',
-		'second-image': '/images/nature_house/second_slider_second.png',
+		'first-image': '/karelia/images/nature_house/second_slider_first.png',
+		'second-image': '/karelia/images/nature_house/second_slider_second.png',
 		title: 'Заповедник КИВАЧ',
 		description:
 			'Всё для того, чтобы можно было как следует помыться, все гости усадьбы будут самыми чистыми как никогда прежде',
 	},
 	{
-		'first-image': '/images/nature_house/valaam_1.jpg',
-		'second-image': '/images/nature_house/valaam_2.jpg',
+		'first-image': '/karelia/images/nature_house/valaam_1.jpg',
+		'second-image': '/karelia/images/nature_house/valaam_2.jpg',
 		title: 'Валаам',
 		description:
 			'Это не просто туристическое путешествие, это погружение в	уникальный мир, где время замедляется, а каждый момент становится ценным',
 	},
 	{
-		'first-image': '/images/nature_house/paan_1.jpg',
-		'second-image': '/images/nature_house/paan_2.jpg',
+		'first-image': '/karelia/images/nature_house/paan_1.jpg',
+		'second-image': '/karelia/images/nature_house/paan_2.jpg',
 		title: 'Национальный парк Паанаярви',
 		description:
 			'Это не только заповедник биоразнообразия, но и исторический памятник, рассказывающий о	тысячелетия соседства человека и природы',
 	},
 	{
-		'first-image': '/images/nature_house/sol_1.jpg',
-		'second-image': '/images/nature_house/sol_2.jpg',
+		'first-image': '/karelia/images/nature_house/sol_1.jpg',
+		'second-image': '/karelia/images/nature_house/sol_2.jpg',
 		title: 'Соловки',
 		description:
 			'История, величие природы и	духовность сливаются в удивительном сочетании на этом архипелаге',
 	},
 	{
-		'first-image': '/images/nature_house/rus_1.jpg',
-		'second-image': '/images/nature_house/rus_2.jpg',
+		'first-image': '/karelia/images/nature_house/rus_1.jpg',
+		'second-image': '/karelia/images/nature_house/rus_2.jpg',
 		title: 'Парк Рускеала',
 		description:
 			'Подарите себе невероятное	путешествие в мир уникальных форм и цветов, дарованных	природой Карелии',

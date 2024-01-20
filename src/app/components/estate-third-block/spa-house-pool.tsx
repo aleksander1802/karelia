@@ -14,7 +14,7 @@ export default function SpaHousePool() {
 			z-40"
 		>
 			<Image
-				src="/images/spa_house/spa_pool.png"
+				src="/karelia/images/spa_house/spa_pool.png"
 				width={spaHousePoolWidth || 607}
 				height={spaHousePoolHeight || 809}
 				alt="Spa house Pool"

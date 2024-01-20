@@ -11,58 +11,58 @@ import { useState } from 'react';
 
 const serviceData1 = [
 	{
-		image: '/images/guest_house/guest_house_first.png',
+		image: '/karelia/karelia/images/guest_house/guest_house_first.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_third.png',
+		image: '/karelia/images/guest_house/guest_house_third.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 ];
 const serviceData2 = [
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_third.png',
+		image: '/karelia/images/guest_house/guest_house_third.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_first.png',
+		image: '/karelia/images/guest_house/guest_house_first.png',
 	},
 ];
 const serviceData3 = [
 	{
-		image: '/images/guest_house/guest_house_third.png',
+		image: '/karelia/images/guest_house/guest_house_third.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_first.png',
+		image: '/karelia/images/guest_house/guest_house_first.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 ];
 const serviceData4 = [
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_first.png',
+		image: '/karelia/images/guest_house/guest_house_first.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_second.png',
+		image: '/karelia/images/guest_house/guest_house_second.png',
 	},
 	{
-		image: '/images/guest_house/guest_house_third.png',
+		image: '/karelia/images/guest_house/guest_house_third.png',
 	},
 ];
 

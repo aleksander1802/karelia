@@ -8,19 +8,19 @@ import styles from './territory-slider.module.css';
 
 const serviceData = [
 	{
-		title: '/images/territory/territory_first.png',
+		title: '/karelia/images/territory/territory_first.png',
 	},
 	{
-		title: '/images/territory/territory_second.png',
+		title: '/karelia/images/territory/territory_second.png',
 	},
 	{
-		title: '/images/territory/territory_first.png',
+		title: '/karelia/images/territory/territory_first.png',
 	},
 	{
-		title: '/images/territory/territory_second.png',
+		title: '/karelia/images/territory/territory_second.png',
 	},
 	{
-		title: '/images/territory/territory_third.jpg',
+		title: '/karelia/images/territory/territory_third.jpg',
 	},
 ];
 
