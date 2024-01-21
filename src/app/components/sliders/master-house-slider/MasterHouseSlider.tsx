@@ -7,43 +7,47 @@ import Image from 'next/image';
 import styles from './master-house-slider.module.css';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
-import MaterHouseFirstSliderImage from '/karelia/images/master_house/slider_first.jpg';
-import MaterHouseSecondSliderImage from '/karelia/images/master_house/master_house.png';
-import MaterHouseThirdSliderImage from '/karelia/images/master_house/slider_third.png';
+
+const masterHouseFirstSliderImage =
+	'/karelia/images/master_house/slider_first.jpg';
+const masterHouseSecondSliderImage =
+	'/karelia/images/master_house/master_house.png';
+const masterHouseThirdSliderImage =
+	'/karelia/images/master_house/slider_third.png';
 
 const serviceData1 = [
 	{
-		image: MaterHouseFirstSliderImage,
+		image: masterHouseFirstSliderImage,
 	},
 	{
-		image: MaterHouseSecondSliderImage,
+		image: masterHouseSecondSliderImage,
 	},
 	{
-		image: MaterHouseThirdSliderImage,
+		image: masterHouseThirdSliderImage,
 	},
 ];
 
 const serviceData2 = [
 	{
-		image: MaterHouseSecondSliderImage,
+		image: masterHouseSecondSliderImage,
 	},
 	{
-		image: MaterHouseThirdSliderImage,
+		image: masterHouseThirdSliderImage,
 	},
 	{
-		image: MaterHouseFirstSliderImage,
+		image: masterHouseFirstSliderImage,
 	},
 ];
 
 const serviceData3 = [
 	{
-		image: MaterHouseThirdSliderImage,
+		image: masterHouseThirdSliderImage,
 	},
 	{
-		image: MaterHouseFirstSliderImage,
+		image: masterHouseFirstSliderImage,
 	},
 	{
-		image: MaterHouseSecondSliderImage,
+		image: masterHouseSecondSliderImage,
 	},
 ];
 

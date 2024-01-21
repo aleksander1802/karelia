@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import SpaPoolImage from '/karelia/images/spa_house/spa_pool.png';
+
+const spaPoolImage = '/karelia/images/spa_house/spa_pool.png';
 
 export default function SpaHousePool() {
 	const spaHousePoolWidth = 607;
@@ -15,7 +16,7 @@ export default function SpaHousePool() {
 			z-40"
 		>
 			<Image
-				src={SpaPoolImage}
+				src={spaPoolImage}
 				width={spaHousePoolWidth || 607}
 				height={spaHousePoolHeight || 809}
 				alt="Spa house Pool"

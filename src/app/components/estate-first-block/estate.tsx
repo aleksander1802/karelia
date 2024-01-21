@@ -2,8 +2,9 @@ import Image from 'next/image';
 import { Poiret_One } from 'next/font/google';
 import Logo from '@/app/assets/svg/Logo-svg';
 import LogoLink from '@/app/assets/svg/Logo-link-svg';
-import EstateBackground from '/karelia/images/estate/estate_background.png';
-import EstateTree from '/karelia/images/estate/tree.png';
+
+const estateBackground = '/karelia/images/estate/estate_background.png';
+const estateTree = '/karelia/images/estate/tree.png';
 
 const poiret = Poiret_One({ subsets: ['cyrillic'], weight: '400' });
 
@@ -11,7 +12,7 @@ export default function Estate() {
 	return (
 		<div className="relative text-3xl cursor-default overflow-hidden">
 			<Image
-				src={EstateBackground}
+				src={estateBackground}
 				width={1920}
 				height={2300}
 				alt="Main background image"
@@ -300,7 +301,7 @@ export default function Estate() {
 			</div>
 
 			<Image
-				src={EstateTree}
+				src={estateTree}
 				width={1120}
 				height={797}
 				alt="tree"

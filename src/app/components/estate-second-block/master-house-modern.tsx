@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import MasterHouseTV from '/karelia/images/master_house/master_house_tv.png';
+
+const masterHouseTV = '/karelia/images/master_house/master_house_tv.png';
 
 export default function MasterHouseModern() {
 	const masterHouseModernWidth = 733;
@@ -27,7 +28,7 @@ export default function MasterHouseModern() {
 			</p>
 
 			<Image
-				src={MasterHouseTV}
+				src={masterHouseTV}
 				width={masterHouseModernWidth}
 				height={masterHouseModernHeight}
 				alt="Master house modern"

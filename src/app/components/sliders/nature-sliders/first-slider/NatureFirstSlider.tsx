@@ -5,27 +5,33 @@ import { Controller, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-first-slider.module.css';
-import NatureFirstSliderFirstImage from '/karelia/images/nature_house/first_slider_first.png';
-import NatureFirstSliderSecondImage from '/karelia/images/nature_house/first_slider_second.png';
-import NatureFirstSliderThirdImage from '/karelia/images/nature_house/first_slider_third.png';
-import NatureFirstSliderFourthImage from '/karelia/images/nature_house/first_slider_fourth.png';
-import NatureFirstSliderFifthImage from '/karelia/images/nature_house/first_slider_fifth.jpg';
+
+const natureFirstSliderFirstImage =
+	'/karelia/images/nature_house/first_slider_first.png';
+const natureFirstSliderSecondImage =
+	'/karelia/images/nature_house/first_slider_second.png';
+const natureFirstSliderThirdImage =
+	'/karelia/images/nature_house/first_slider_third.png';
+const natureFirstSliderFourthImage =
+	'/karelia/images/nature_house/first_slider_fourth.png';
+const natureFirstSliderFifthImage =
+	'/karelia/images/nature_house/first_slider_fifth.jpg';
 
 const serviceData = [
 	{
-		image: NatureFirstSliderFirstImage,
+		image: natureFirstSliderFirstImage,
 	},
 	{
-		image: NatureFirstSliderSecondImage,
+		image: natureFirstSliderSecondImage,
 	},
 	{
-		image: NatureFirstSliderThirdImage,
+		image: natureFirstSliderThirdImage,
 	},
 	{
-		image: NatureFirstSliderFourthImage,
+		image: natureFirstSliderFourthImage,
 	},
 	{
-		image: NatureFirstSliderFifthImage,
+		image: natureFirstSliderFifthImage,
 	},
 ];
 
@@ -79,7 +85,7 @@ function NatureFirstSlider() {
 								src={item.image}
 								width={slideWidth}
 								height={slideHeight}
-								alt={`Nature first slider image ${index}`}
+								alt={`nature first slider image ${index}`}
 								priority
 								style={{ objectFit: 'cover' }}
 								className="select-none 

@@ -7,43 +7,47 @@ import Image from 'next/image';
 import styles from './spa-house-slider.module.css';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
-import MasterHouseFirstSliderImage from '/karelia/images/master_house/slider_first.jpg';
-import MasterHouseSecondSliderImage from '/karelia/images/spa_house/spa_second_slider.png';
-import MasterHouseThirdSliderImage from '/karelia/images/spa_house/spa_third_slider.png';
+
+const masterHouseFirstSliderImage =
+	'/karelia/images/master_house/slider_first.jpg';
+const masterHouseSecondSliderImage =
+	'/karelia/images/spa_house/spa_second_slider.png';
+const masterHouseThirdSliderImage =
+	'/karelia/images/spa_house/spa_third_slider.png';
 
 const serviceData1 = [
 	{
-		image: MasterHouseFirstSliderImage,
+		image: masterHouseFirstSliderImage,
 	},
 	{
-		image: MasterHouseSecondSliderImage,
+		image: masterHouseSecondSliderImage,
 	},
 	{
-		image: MasterHouseThirdSliderImage,
+		image: masterHouseThirdSliderImage,
 	},
 ];
 
 const serviceData2 = [
 	{
-		image: MasterHouseSecondSliderImage,
+		image: masterHouseSecondSliderImage,
 	},
 	{
-		image: MasterHouseThirdSliderImage,
+		image: masterHouseThirdSliderImage,
 	},
 	{
-		image: MasterHouseFirstSliderImage,
+		image: masterHouseFirstSliderImage,
 	},
 ];
 
 const serviceData3 = [
 	{
-		image: MasterHouseThirdSliderImage,
+		image: masterHouseThirdSliderImage,
 	},
 	{
-		image: MasterHouseFirstSliderImage,
+		image: masterHouseFirstSliderImage,
 	},
 	{
-		image: MasterHouseSecondSliderImage,
+		image: masterHouseSecondSliderImage,
 	},
 ];
 

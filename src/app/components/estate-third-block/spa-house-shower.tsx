@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import SpaShowerImage from '/karelia/images/spa_house/spa_shower.png';
+
+const spaShowerImage = '/karelia/images/spa_house/spa_shower.png';
 
 export default function SpaHouseShower() {
 	const spaHouseShowerWidth = 606;
@@ -18,7 +19,7 @@ export default function SpaHouseShower() {
 				Описание душа
 			</p>
 			<Image
-				src={SpaShowerImage}
+				src={spaShowerImage}
 				width={spaHouseShowerWidth || 606}
 				height={spaHouseShowerHeight || 722}
 				alt="Spa house Shower"

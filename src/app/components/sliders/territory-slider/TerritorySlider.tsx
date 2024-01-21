@@ -5,25 +5,29 @@ import { Controller, Navigation } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './territory-slider.module.css';
-import TerritorySliderFirstImage from '/karelia/images/territory/territory_first.png';
-import TerritorySliderSecondImage from '/karelia/images/territory/territory_second.png';
-import TerritorySliderThirdImage from '/karelia/images/territory/territory_third.jpg';
+
+const territorySliderFirstImage =
+	'/karelia/images/territory/territory_first.png';
+const territorySliderSecondImage =
+	'/karelia/images/territory/territory_second.png';
+const territorySliderThirdImage =
+	'/karelia/images/territory/territory_third.jpg';
 
 const serviceData = [
 	{
-		image: TerritorySliderFirstImage,
+		image: territorySliderFirstImage,
 	},
 	{
-		image: TerritorySliderSecondImage,
+		image: territorySliderSecondImage,
 	},
 	{
-		image: TerritorySliderFirstImage,
+		image: territorySliderFirstImage,
 	},
 	{
-		image: TerritorySliderSecondImage,
+		image: territorySliderSecondImage,
 	},
 	{
-		image: TerritorySliderThirdImage,
+		image: territorySliderThirdImage,
 	},
 ];
 

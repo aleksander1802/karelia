@@ -5,49 +5,60 @@ import { A11y, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-second-slider.module.css';
-import NatureSecondSliderFirstImage from '/karelia/images/nature_house/second_slider_first.png';
-import NatureSecondSliderSecondImage from '/karelia/images/nature_house/second_slider_first.png';
-import NatureSecondSliderValaamFirstImage from '/karelia/images/nature_house/valaam_1.jpg';
-import NatureSecondSliderValaamSecondImage from '/karelia/images/nature_house/valaam_2.jpg';
-import NatureSecondSliderPaanFirstImage from '/karelia/images/nature_house/paan_1.jpg';
-import NatureSecondSliderPaanSecondImage from '/karelia/images/nature_house/paan_2.jpg';
-import NatureSecondSliderSolFirstImage from '/karelia/images/nature_house/sol_1.jpg';
-import NatureSecondSliderSolSecondImage from '/karelia/images/nature_house/sol_2.jpg';
-import NatureSecondSliderRusFirstImage from '/karelia/images/nature_house/rus_1.jpg';
-import NatureSecondSliderRusSecondImage from '/karelia/images/nature_house/rus_2.jpg';
+
+const natureSecondSliderFirstImage =
+	'/karelia/images/nature_house/second_slider_first.png';
+const natureSecondSliderSecondImage =
+	'/karelia/images/nature_house/second_slider_first.png';
+const natureSecondSliderValaamFirstImage =
+	'/karelia/images/nature_house/valaam_1.jpg';
+const natureSecondSliderValaamSecondImage =
+	'/karelia/images/nature_house/valaam_2.jpg';
+const natureSecondSliderPaanFirstImage =
+	'/karelia/images/nature_house/paan_1.jpg';
+const natureSecondSliderPaanSecondImage =
+	'/karelia/images/nature_house/paan_2.jpg';
+const natureSecondSliderSolFirstImage =
+	'/karelia/images/nature_house/sol_1.jpg';
+const natureSecondSliderSolSecondImage =
+	'/karelia/images/nature_house/sol_2.jpg';
+const natureSecondSliderRusFirstImage =
+	'/karelia/images/nature_house/rus_1.jpg';
+const natureSecondSliderRusSecondImage =
+	'/karelia/images/nature_house/rus_2.jpg';
 
 const serviceData = [
 	{
-		'first-image': NatureSecondSliderFirstImage,
-		'second-image': NatureSecondSliderSecondImage,
+		'first-image': natureSecondSliderFirstImage,
+		'second-image': natureSecondSliderSecondImage,
 		title: 'Заповедник КИВАЧ',
 		description:
 			'Всё для того, чтобы можно было как следует помыться, все гости усадьбы будут самыми чистыми как никогда прежде',
 	},
 	{
-		'first-image': NatureSecondSliderValaamFirstImage,
-		'second-image': NatureSecondSliderValaamSecondImage,
+		'first-image': natureSecondSliderValaamFirstImage,
+		'second-image': natureSecondSliderValaamSecondImage,
 		title: 'Валаам',
 		description:
 			'Это не просто туристическое путешествие, это погружение в	уникальный мир, где время замедляется, а каждый момент становится ценным',
 	},
 	{
-		'first-image': NatureSecondSliderPaanFirstImage,
-		'second-image': NatureSecondSliderPaanSecondImage,
+		'first-image': natureSecondSliderPaanFirstImage,
+		'second-image': natureSecondSliderPaanSecondImage,
 		title: 'Национальный парк Паанаярви',
 		description:
 			'Это не только заповедник биоразнообразия, но и исторический памятник, рассказывающий о	тысячелетия соседства человека и природы',
 	},
 	{
-		'first-image': NatureSecondSliderSolFirstImage,
-		'second-image': NatureSecondSliderSolSecondImage,
+		'first-image': natureSecondSliderSolFirstImage,
+		'second-image': natureSecondSliderSolSecondImage,
 		title: 'Соловки',
 		description:
 			'История, величие природы и	духовность сливаются в удивительном сочетании на этом архипелаге',
 	},
 	{
-		'first-image': NatureSecondSliderRusFirstImage,
-		'second-image': NatureSecondSliderRusSecondImage,
+		'first-image': natureSecondSliderRusFirstImage,
+		'second-image': natureSecondSliderRusSecondImage,
 		title: 'Парк Рускеала',
 		description:
 			'Подарите себе невероятное	путешествие в мир уникальных форм и цветов, дарованных	природой Карелии',
@@ -119,7 +130,7 @@ function NatureSecondSlider() {
 										src={item['first-image']}
 										width={activeSlideWidth || 753}
 										height={activeSlideHeight || 497}
-										alt={`Nature second slider image ${index}`}
+										alt={`nature second slider image ${index}`}
 										style={{
 											objectFit: 'cover',
 										}}
@@ -140,7 +151,7 @@ function NatureSecondSlider() {
 											src={item['second-image']}
 											width={slideWidth || 356}
 											height={slideHeight || 375}
-											alt={`Nature second slider image ${index}`}
+											alt={`nature second slider image ${index}`}
 											priority
 											className="
 											xl:w-[356px] xl:h-[375px] 
