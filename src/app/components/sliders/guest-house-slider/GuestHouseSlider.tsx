@@ -7,64 +7,68 @@ import Image from 'next/image';
 import styles from './guest-house-slider.module.css';
 import type { Swiper as SwiperType } from 'swiper';
 import { useState } from 'react';
-import GuestHouseFirstSliderImage from '/karelia/images/guest_house/guest_house_first.png';
-import GuestHouseSecondSliderImage from '/karelia/images/guest_house/guest_house_second.png';
-import GuestHouseThirdSliderImage from '/karelia/images/guest_house/guest_house_third.png';
+
+const guestHouseFirstSliderImage = 
+	'/karelia/images/guest_house/guest_house_first.png';
+const guestHouseSecondSliderImage =
+	'/karelia/images/guest_house/guest_house_second.png';
+const guestHouseThirdSliderImage =
+	'/karelia/images/guest_house/guest_house_third.png';
 
 const serviceData1 = [
 	{
-		image: GuestHouseFirstSliderImage,
+		image: guestHouseFirstSliderImage,
 	},
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 	{
-		image: GuestHouseThirdSliderImage,
+		image: guestHouseThirdSliderImage,
 	},
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 ];
 const serviceData2 = [
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 	{
-		image: GuestHouseThirdSliderImage,
+		image: guestHouseThirdSliderImage,
 	},
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 	{
-		image: GuestHouseFirstSliderImage,
+		image: guestHouseFirstSliderImage,
 	},
 ];
 const serviceData3 = [
 	{
-		image: GuestHouseThirdSliderImage,
+		image: guestHouseThirdSliderImage,
 	},
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 	{
-		image: GuestHouseFirstSliderImage,
+		image: guestHouseFirstSliderImage,
 	},
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 ];
 const serviceData4 = [
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 	{
-		image: GuestHouseFirstSliderImage,
+		image: guestHouseFirstSliderImage,
 	},
 	{
-		image: GuestHouseSecondSliderImage,
+		image: guestHouseSecondSliderImage,
 	},
 	{
-		image: GuestHouseThirdSliderImage,
+		image: guestHouseThirdSliderImage,
 	},
 ];
 
