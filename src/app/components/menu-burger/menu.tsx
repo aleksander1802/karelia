@@ -6,10 +6,10 @@ export default function Menu() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const backgroundContainer = isOpen
-		? 'h-[100vh] index  xl:pl-[2rem] lg:pl-[5rem] sm:pl-[3rem] pl-[1rem]'
-		: 'h-0  xl:pl-[2rem] lg:pl-[5rem] sm:pl-[3rem] pl-[1rem]';
+		? 'h-[100vh] index  xl:pl-[2rem] lg:pl-[5rem] sm:pl-[3rem] pl-[1rem] opacity-100'
+		: 'h-0  xl:pl-[2rem] lg:pl-[5rem] sm:pl-[3rem] pl-[1rem] opacity-0';
 
-	const backgroundLinks = isOpen ? ' top-[4rem] ' : ' top-[-544px] ';
+	const backgroundLinks = isOpen ? ' top-[4rem]' : ' top-[-544px]';
 
 	return (
 		<div className="fixed top-0 left-0 index w-full">

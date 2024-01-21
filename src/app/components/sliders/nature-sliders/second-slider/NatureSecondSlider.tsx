@@ -9,7 +9,7 @@ import styles from './nature-second-slider.module.css';
 const natureSecondSliderFirstImage =
 	'/karelia/images/nature_house/second_slider_first.png';
 const natureSecondSliderSecondImage =
-	'/karelia/images/nature_house/second_slider_first.png';
+	'/karelia/images/nature_house/second_slider_second.png';
 const natureSecondSliderValaamFirstImage =
 	'/karelia/images/nature_house/valaam_1.jpg';
 const natureSecondSliderValaamSecondImage =
