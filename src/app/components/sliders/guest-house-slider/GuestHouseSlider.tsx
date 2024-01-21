@@ -7,9 +7,9 @@ import Image from 'next/image';
 import styles from './guest-house-slider.module.css';
 import type { Swiper as SwiperType } from 'swiper';
 import { useState } from 'react';
-import GuestHouseFirstSliderImage from '../../../../../public/images/guest_house/guest_house_first.png';
-import GuestHouseSecondSliderImage from '../../../../../public/images/guest_house/guest_house_second.png';
-import GuestHouseThirdSliderImage from '../../../../../public/images/guest_house/guest_house_third.png';
+import GuestHouseFirstSliderImage from '/karelia/images/guest_house/guest_house_first.png';
+import GuestHouseSecondSliderImage from '/karelia/images/guest_house/guest_house_second.png';
+import GuestHouseThirdSliderImage from '/karelia/images/guest_house/guest_house_third.png';
 
 const serviceData1 = [
 	{
