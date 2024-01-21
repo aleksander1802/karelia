@@ -5,7 +5,7 @@ import { A11y, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-second-slider.module.css';
-import NatureSecondSliderFirstImage from '../../../../../../public/images/nature_house/first_slider_first.png';
+import NatureSecondSliderFirstImage from '../../../../../../public/images/nature_house/second_slider_first.png';
 import NatureSecondSliderSecondImage from '../../../../../../public/images/nature_house/second_slider_first.png';
 import NatureSecondSliderValaamFirstImage from '../../../../../../public/images/nature_house/valaam_1.jpg';
 import NatureSecondSliderValaamSecondImage from '../../../../../../public/images/nature_house/valaam_2.jpg';
