@@ -109,9 +109,12 @@ function NatureSecondSlider() {
 										src={item['first-image']}
 										width={activeSlideWidth || 753}
 										height={activeSlideHeight || 497}
-										alt={`Nature second slider image ${index}`}										
+										alt={`Nature second slider image ${index}`}
+										style={{
+											objectFit: 'cover',
+										}}
 										priority
-										className=" bg-cover
+										className="
 										xl:w-[753px] xl:h-[497px]
 										lg:w-[596px] lg:h-[393px]
 										sm:w-[456px] sm:h-[301px]

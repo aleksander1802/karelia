@@ -101,7 +101,10 @@ function MasterHouseSlider() {
 								height={slideHeight || 576}
 								alt={`Spa house slider image ${index}`}
 								priority
-								className="w-full opacity-[0.4] bg-cover
+								style={{
+									objectFit: 'cover',
+								}}
+								className="w-full opacity-[0.4]
 								xl:h-[576px] lg:h-[448px] sm:h-[516px] h-[309px]"
 							/>
 						</SwiperSlide>
@@ -131,7 +134,10 @@ function MasterHouseSlider() {
 									height={activeSlideHeight || 612}
 									alt={`Spa house slider image ${index}`}
 									priority
-									className="w-full bg-cover 
+									style={{
+										objectFit: 'cover',
+									}}
+									className="w-full 
 									xl:h-[612px] lg:h-[477px] sm:h-[548px] h-[328px]"
 								/>
 							</SwiperSlide>
@@ -156,7 +162,10 @@ function MasterHouseSlider() {
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
 								priority
-								className="w-full opacity-[0.4] bg-cover
+								style={{
+									objectFit: 'cover',
+								}}
+								className="w-full opacity-[0.4]
 								xl:h-[576px] lg:h-[448px] sm:h-[516px] h-[309px]"
 							/>
 						</SwiperSlide>

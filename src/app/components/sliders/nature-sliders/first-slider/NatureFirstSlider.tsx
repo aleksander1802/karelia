@@ -75,8 +75,9 @@ function NatureFirstSlider() {
 								width={slideWidth}
 								height={slideHeight}
 								alt={`Nature first slider image ${index}`}
-								priority								
-								className="select-none bg-cover
+								priority
+								style={{ objectFit: 'cover' }}
+								className="select-none 
 								xl:w-[485px] xl:h-[532px]
 								lg2:w-[425px] lg2:h-[473px]
 								sm:w-[375px] sm:h-[413px]								

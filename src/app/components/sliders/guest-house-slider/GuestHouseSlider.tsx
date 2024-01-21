@@ -105,8 +105,11 @@ function GuestHouseSlider() {
 								height={slideWidthHeight || 733}
 								alt={`Nature second slider image ${index}`}
 								priority
+								style={{
+									objectFit: 'cover',
+								}}
 								className="
-								w-full bg-cover
+								w-full
 								xl:h-[655px] lg2:h-[560px] lg:h-[515px] sm:h-[590px] h-[296px]
 								"
 							/>
@@ -138,7 +141,10 @@ function GuestHouseSlider() {
 								height={activeSlideWidth}
 								alt={`Nature second slider image ${index}`}
 								priority
-								className="opacity-[0.4] bg-cover	
+								style={{
+									objectFit: 'cover',
+								}}
+								className="opacity-[0.4]	
 								w-full								
 								xl:h-[655px] lg2:h-[560px] lg:h-[515px] sm:h-[590px] h-[296px]
 								"
@@ -163,7 +169,10 @@ function GuestHouseSlider() {
 								height={activeSlideWidth}
 								alt={`Nature second slider image ${index}`}
 								priority
-								className="opacity-[0.4] bg-cover	 
+								style={{
+									objectFit: 'cover',
+								}}
+								className="opacity-[0.4]	
 								w-full								
 								xl:h-[655px] lg2:h-[560px] lg:h-[515px] sm:h-[590px] h-[296px]
 								"
@@ -187,8 +196,10 @@ function GuestHouseSlider() {
 								width={activeSlideWidth}
 								height={activeSlideWidth}
 								alt={`Nature second slider image ${index}`}
-								priority
-								className="opacity-[0.4] bg-cover	
+								style={{
+									objectFit: 'cover',
+								}}
+								className="opacity-[0.4]	
 								w-full								
 								xl:h-[655px] lg2:h-[560px] lg:h-[515px] sm:h-[590px] h-[296px]
 								"
