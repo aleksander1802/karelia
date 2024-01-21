@@ -2,6 +2,10 @@ import LogoMaster from '@/app/assets/svg/Logo-master-svg';
 import Image from 'next/image';
 import MasterHouseHearth from './master-house-hearth';
 import MasterHouseModern from './master-house-modern';
+import MasterHouseImage from '/karelia/images/master_house/master_house.png';
+import MasterHouseFenceImage from '/karelia/images/master_house/master_house_fence.png';
+import MasterHouseGlassImage from "/karelia/images/master_house/master_house_glasshouse.png"
+
 
 export default function MasterHouse() {
 	const firstLevel = [
@@ -237,7 +241,7 @@ export default function MasterHouse() {
 				relative z-0"
 			>
 				<Image
-					src="/karelia/images/master_house/master_house.png"
+					src={MasterHouseImage}
 					width={masterHouseWidth}
 					height={masterHouseHeight}
 					alt="Master house"
@@ -251,7 +255,7 @@ export default function MasterHouse() {
 				/>
 				<div>
 					<Image
-						src="/karelia/images/master_house/master_house_fence.png"
+						src={MasterHouseFenceImage}
 						width={masterHouseFenceWidth}
 						height={masterHouseFenceHeight}
 						alt="Master house fense"
@@ -309,7 +313,7 @@ export default function MasterHouse() {
 					sm:items-center sm:gap-0 gap-[10px]"
 				>
 					<Image
-						src="/karelia/images/master_house/master_house_glasshouse.png"
+						src={MasterHouseGlassImage}
 						width={607}
 						height={811}
 						alt="Master house glasshouse"

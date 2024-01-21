@@ -5,22 +5,27 @@ import { Controller, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-first-slider.module.css';
+import NatureFirstSliderFirstImage from '/karelia/images/nature_house/first_slider_first.png';
+import NatureFirstSliderSecondImage from '/karelia/images/nature_house/first_slider_second.png';
+import NatureFirstSliderThirdImage from '/karelia/images/nature_house/first_slider_third.png';
+import NatureFirstSliderFourthImage from '/karelia/images/nature_house/first_slider_fourth.png';
+import NatureFirstSliderFifthImage from '/karelia/images/nature_house/first_slider_fifth.jpg';
 
 const serviceData = [
 	{
-		image: '/karelia/images/nature_house/first_slider_first.png',
+		image: NatureFirstSliderFirstImage,
 	},
 	{
-		image: '/karelia/images/nature_house/first_slider_second.png',
+		image: NatureFirstSliderSecondImage,
 	},
 	{
-		image: '/karelia/images/nature_house/first_slider_third.png',
+		image: NatureFirstSliderThirdImage,
 	},
 	{
-		image: '/karelia/images/nature_house/first_slider_fourth.png',
+		image: NatureFirstSliderFourthImage,
 	},
 	{
-		image: '/karelia/images/nature_house/first_slider_fifth.jpg',
+		image: NatureFirstSliderFifthImage,
 	},
 ];
 

@@ -7,40 +7,43 @@ import Image from 'next/image';
 import styles from './spa-house-slider.module.css';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
+import MasterHouseFirstSliderImage from '/karelia/images/master_house/slider_first.jpg';
+import MasterHouseSecondSliderImage from '/karelia/images/spa_house/spa_second_slider.png';
+import MasterHouseThirdSliderImage from '/karelia/images/spa_house/spa_third_slider.png';
 
 const serviceData1 = [
 	{
-		link: '/karelia/images/master_house/slider_first.jpg',
+		image: MasterHouseFirstSliderImage,
 	},
 	{
-		link: '/karelia/images/spa_house/spa_second_slider.png',
+		image: MasterHouseSecondSliderImage,
 	},
 	{
-		link: '/karelia/images/spa_house/spa_third_slider.png',
+		image: MasterHouseThirdSliderImage,
 	},
 ];
 
 const serviceData2 = [
 	{
-		link: '/karelia/images/spa_house/spa_second_slider.png',
+		image: MasterHouseSecondSliderImage,
 	},
 	{
-		link: '/karelia/images/spa_house/spa_third_slider.png',
+		image: MasterHouseThirdSliderImage,
 	},
 	{
-		link: '/karelia/images/master_house/slider_first.jpg',
+		image: MasterHouseFirstSliderImage,
 	},
 ];
 
 const serviceData3 = [
 	{
-		link: '/karelia/images/spa_house/spa_third_slider.png',
+		image: MasterHouseThirdSliderImage,
 	},
 	{
-		link: '/karelia/images/master_house/slider_first.jpg',
+		image: MasterHouseFirstSliderImage,
 	},
 	{
-		link: '/karelia/images/spa_house/spa_second_slider.png',
+		image: MasterHouseSecondSliderImage,
 	},
 ];
 
@@ -79,7 +82,7 @@ function SpaHouseSlider() {
 					{serviceData1.map((item, index) => (
 						<SwiperSlide key={index}>
 							<Image
-								src={item.link}
+								src={item.image}
 								width={slideWidth}
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}
@@ -112,7 +115,7 @@ function SpaHouseSlider() {
 						{serviceData2.map((item, index) => (
 							<SwiperSlide key={index}>
 								<Image
-									src={item.link}
+									src={item.image}
 									width={activeSlideWidth || 745}
 									height={activeSlideHeight || 612}
 									alt={`Spa house slider image ${index}`}
@@ -138,7 +141,7 @@ function SpaHouseSlider() {
 					{serviceData3.map((item, index) => (
 						<SwiperSlide key={index}>
 							<Image
-								src={item.link}
+								src={item.image}
 								width={slideWidth}
 								height={slideHeight}
 								alt={`Spa house slider image ${index}`}

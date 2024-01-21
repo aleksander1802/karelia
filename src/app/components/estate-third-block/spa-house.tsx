@@ -3,6 +3,7 @@ import SpaHouseTub from './spa-house-tub';
 import SpaHouseMenu from './spa-house-menu';
 import SpaHouseShower from './spa-house-shower';
 import SpaHousePool from './spa-house-pool';
+import SpaTreeImage from '/karelia/images/spa_house/spa_tree.png';
 
 export default function SpaHouse() {
 	const treeWidth = 408;
@@ -18,7 +19,7 @@ export default function SpaHouse() {
 			"
 		>
 			<Image
-				src="/karelia/images/spa_house/spa_tree.png"
+				src={SpaTreeImage}
 				width={treeWidth || 408}
 				height={treeHeight || 328}
 				alt="Spa house tree"
@@ -28,9 +29,7 @@ export default function SpaHouse() {
 				xl:-left-[155px] lg:-left-[109px] sm:-left-[145px] -left-[93px]
 				z-30 
 				xl:w-[564px] lg:w-[445px] sm:w-[321px] w-[232px]
-				xl:h-[328px] lg:h-[258px] sm:h-[186px] h-[134px]
-				
-				"
+				xl:h-[328px] lg:h-[258px] sm:h-[186px] h-[134px]"
 			/>
 
 			<div

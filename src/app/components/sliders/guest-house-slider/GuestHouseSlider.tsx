@@ -5,64 +5,66 @@ import { A11y, Navigation, Controller } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './guest-house-slider.module.css';
-
 import type { Swiper as SwiperType } from 'swiper';
 import { useState } from 'react';
+import GuestHouseFirstSliderImage from '/karelia/images/guest_house/guest_house_first.png';
+import GuestHouseSecondSliderImage from '/karelia/images/guest_house/guest_house_second.png';
+import GuestHouseThirdSliderImage from '/karelia/images/guest_house/guest_house_third.png';
 
 const serviceData1 = [
 	{
-		image: '/karelia/images/guest_house/guest_house_first.png',
+		image: GuestHouseFirstSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_third.png',
+		image: GuestHouseThirdSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 ];
 const serviceData2 = [
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_third.png',
+		image: GuestHouseThirdSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_first.png',
+		image: GuestHouseFirstSliderImage,
 	},
 ];
 const serviceData3 = [
 	{
-		image: '/karelia/images/guest_house/guest_house_third.png',
+		image: GuestHouseThirdSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_first.png',
+		image: GuestHouseFirstSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 ];
 const serviceData4 = [
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_first.png',
+		image: GuestHouseFirstSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_second.png',
+		image: GuestHouseSecondSliderImage,
 	},
 	{
-		image: '/karelia/images/guest_house/guest_house_third.png',
+		image: GuestHouseThirdSliderImage,
 	},
 ];
 

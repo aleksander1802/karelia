@@ -5,39 +5,49 @@ import { A11y, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-second-slider.module.css';
+import NatureSecondSliderFirstImage from '/karelia/images/nature_house/second_slider_first.png';
+import NatureSecondSliderSecondImage from '/karelia/images/nature_house/second_slider_first.png';
+import NatureSecondSliderValaamFirstImage from '/karelia/images/nature_house/valaam_1.jpg';
+import NatureSecondSliderValaamSecondImage from '/karelia/images/nature_house/valaam_2.jpg';
+import NatureSecondSliderPaanFirstImage from '/karelia/images/nature_house/paan_1.jpg';
+import NatureSecondSliderPaanSecondImage from '/karelia/images/nature_house/paan_2.jpg';
+import NatureSecondSliderSolFirstImage from '/karelia/images/nature_house/sol_1.jpg';
+import NatureSecondSliderSolSecondImage from '/karelia/images/nature_house/sol_2.jpg';
+import NatureSecondSliderRusFirstImage from '/karelia/images/nature_house/rus_1.jpg';
+import NatureSecondSliderRusSecondImage from '/karelia/images/nature_house/rus_2.jpg';
 
 const serviceData = [
 	{
-		'first-image': '/karelia/images/nature_house/second_slider_first.png',
-		'second-image': '/karelia/images/nature_house/second_slider_second.png',
+		'first-image': NatureSecondSliderFirstImage,
+		'second-image': NatureSecondSliderSecondImage,
 		title: 'Заповедник КИВАЧ',
 		description:
 			'Всё для того, чтобы можно было как следует помыться, все гости усадьбы будут самыми чистыми как никогда прежде',
 	},
 	{
-		'first-image': '/karelia/images/nature_house/valaam_1.jpg',
-		'second-image': '/karelia/images/nature_house/valaam_2.jpg',
+		'first-image': NatureSecondSliderValaamFirstImage,
+		'second-image': NatureSecondSliderValaamSecondImage,
 		title: 'Валаам',
 		description:
 			'Это не просто туристическое путешествие, это погружение в	уникальный мир, где время замедляется, а каждый момент становится ценным',
 	},
 	{
-		'first-image': '/karelia/images/nature_house/paan_1.jpg',
-		'second-image': '/karelia/images/nature_house/paan_2.jpg',
+		'first-image': NatureSecondSliderPaanFirstImage,
+		'second-image': NatureSecondSliderPaanSecondImage,
 		title: 'Национальный парк Паанаярви',
 		description:
 			'Это не только заповедник биоразнообразия, но и исторический памятник, рассказывающий о	тысячелетия соседства человека и природы',
 	},
 	{
-		'first-image': '/karelia/images/nature_house/sol_1.jpg',
-		'second-image': '/karelia/images/nature_house/sol_2.jpg',
+		'first-image': NatureSecondSliderSolFirstImage,
+		'second-image': NatureSecondSliderSolSecondImage,
 		title: 'Соловки',
 		description:
 			'История, величие природы и	духовность сливаются в удивительном сочетании на этом архипелаге',
 	},
 	{
-		'first-image': '/karelia/images/nature_house/rus_1.jpg',
-		'second-image': '/karelia/images/nature_house/rus_2.jpg',
+		'first-image': NatureSecondSliderRusFirstImage,
+		'second-image': NatureSecondSliderRusSecondImage,
 		title: 'Парк Рускеала',
 		description:
 			'Подарите себе невероятное	путешествие в мир уникальных форм и цветов, дарованных	природой Карелии',

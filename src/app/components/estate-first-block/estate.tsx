@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { Poiret_One } from 'next/font/google';
 import Logo from '@/app/assets/svg/Logo-svg';
 import LogoLink from '@/app/assets/svg/Logo-link-svg';
+import EstateBackground from '/karelia/images/estate/estate_background.png';
+import EstateTree from '/karelia/images/estate/tree.png';
 
 const poiret = Poiret_One({ subsets: ['cyrillic'], weight: '400' });
 
@@ -9,7 +11,7 @@ export default function Estate() {
 	return (
 		<div className="relative text-3xl cursor-default overflow-hidden">
 			<Image
-				src={'/karelia/images/estate/estate_background.png'}
+				src={EstateBackground}
 				width={1920}
 				height={2300}
 				alt="Main background image"
@@ -298,11 +300,11 @@ export default function Estate() {
 			</div>
 
 			<Image
-				src={'/karelia/images/estate/tree.png'}
+				src={EstateTree}
 				width={1120}
 				height={797}
 				alt="tree"
-				priority={true}
+				priority
 				className="absolute bottom-0 right-0 
 				lg:translate-x-[15%] 							
 				lg:translate-y-[0%]
@@ -313,10 +315,7 @@ export default function Estate() {
 				z-20
 				xl:w-[1120px] xl:h-[797px]
 				sm:w-[583px] sm:h-[415px]
-				w-[299px] h-[215px]
-
-				
-				 "
+				w-[299px] h-[215px]"
 			/>
 		</div>
 	);

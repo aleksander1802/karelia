@@ -5,22 +5,25 @@ import { Controller, Navigation } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './territory-slider.module.css';
+import TerritorySliderFirstImage from '/karelia/images/territory/territory_first.png';
+import TerritorySliderSecondImage from '/karelia/images/territory/territory_second.png';
+import TerritorySliderThirdImage from '/karelia/images/territory/territory_third.jpg';
 
 const serviceData = [
 	{
-		title: '/karelia/images/territory/territory_first.png',
+		image: TerritorySliderFirstImage,
 	},
 	{
-		title: '/karelia/images/territory/territory_second.png',
+		image: TerritorySliderSecondImage,
 	},
 	{
-		title: '/karelia/images/territory/territory_first.png',
+		image: TerritorySliderFirstImage,
 	},
 	{
-		title: '/karelia/images/territory/territory_second.png',
+		image: TerritorySliderSecondImage,
 	},
 	{
-		title: '/karelia/images/territory/territory_third.jpg',
+		image: TerritorySliderThirdImage,
 	},
 ];
 
@@ -58,7 +61,7 @@ function TerritorySlider() {
 				{serviceData.map((item, index) => (
 					<SwiperSlide key={index}>
 						<Image
-							src={item.title}
+							src={item.image}
 							width={slideWidth || 680}
 							height={slideHeight || 614}
 							alt={`Territory slider image ${index}`}
@@ -75,10 +78,10 @@ function TerritorySlider() {
 			</Swiper>
 			<div className={styles['swiper-navigation']}>
 				<div className={styles['swiper-button-prev']}>
-					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden"/>
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden" />
 				</div>
 				<div className={styles['swiper-button-next']}>
-					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden"/>
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden" />
 				</div>
 			</div>
 		</div>

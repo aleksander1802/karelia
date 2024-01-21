@@ -1,5 +1,6 @@
 import LogoLink from '@/app/assets/svg/Logo-link-svg';
 import Image from 'next/image';
+import MasterHouseHearthImage from '/karelia/images/master_house/master_house_hearth.png';
 
 export default function MasterHouseHearth() {
 	const masterHouseHearthWidth = 481;
@@ -16,7 +17,7 @@ export default function MasterHouseHearth() {
 		 "
 		>
 			<Image
-				src="/karelia/images/master_house/master_house_hearth.png"
+				src={MasterHouseHearthImage}
 				width={masterHouseHearthWidth}
 				height={masterHouseHearthHeight}
 				alt="Master house hearth"
