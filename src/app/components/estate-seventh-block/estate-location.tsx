@@ -162,7 +162,7 @@ export default function EsateLocation() {
 						<div
 							className="flex items-center 
 						xl:w-[272px] lg:w-[218px] sm:w-[340px] w-full 
-						border-b-[1px] sm:border-none
+						border-b-[1px] sm:border-none border-secondary
 						h-full justify-center"
 						>
 							<span className="xl:text-[20px] text-[16px]">
