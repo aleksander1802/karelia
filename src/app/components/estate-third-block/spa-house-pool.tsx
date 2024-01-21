@@ -18,6 +18,7 @@ export default function SpaHousePool() {
 				width={spaHousePoolWidth || 607}
 				height={spaHousePoolHeight || 809}
 				alt="Spa house Pool"
+				priority
 				className="z-30
 				xl:w-[607px] xl:h-[809px] 
 				lg:w-[473px] lg:h-[629px]

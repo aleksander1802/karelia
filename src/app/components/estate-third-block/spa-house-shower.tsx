@@ -22,6 +22,7 @@ export default function SpaHouseShower() {
 				width={spaHouseShowerWidth || 606}
 				height={spaHouseShowerHeight || 722}
 				alt="Spa house Shower"
+				priority
 				className="z-30
 				xl:w-[606px] xl:h-[722px] 
 				lg:w-[473px] lg:h-[564px]

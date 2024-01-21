@@ -13,7 +13,7 @@ export default function Estate() {
 				width={1920}
 				height={2300}
 				alt="Main background image"
-				priority={true}
+				priority
 				className="absolute top-0 left-0 
 				bg-contain bg-no-repeat bg-center -z-10"
 				style={{ width: '100%', height: 'auto' }}

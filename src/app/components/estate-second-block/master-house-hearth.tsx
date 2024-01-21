@@ -20,6 +20,7 @@ export default function MasterHouseHearth() {
 				width={masterHouseHearthWidth}
 				height={masterHouseHearthHeight}
 				alt="Master house hearth"
+				priority
 				className="z-30 
 				xl:w-[481px] xl:h-[642px] 
 				lg:w-[378px] lg:h-[504px]

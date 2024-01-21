@@ -62,10 +62,8 @@ function TerritorySlider() {
 							width={slideWidth || 680}
 							height={slideHeight || 614}
 							alt={`Territory slider image ${index}`}
-							style={{
-								objectFit: 'cover',
-							}}
-							className="w-full 
+							priority
+							className="w-full bg-cover 
 							xl:h-[614px] lg:h-[481px] sm:h-[555px] h-[425px]
 							"
 						/>
@@ -74,10 +72,10 @@ function TerritorySlider() {
 			</Swiper>
 			<div className={styles['swiper-navigation']}>
 				<div className={styles['swiper-button-prev']}>
-					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden"/>
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden" />
 				</div>
 				<div className={styles['swiper-button-next']}>
-					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden"/>
+					<NavigationArrow className="xl:w-[38px] xl:h-[38px] w-[26px] h-[26px] lg:block hidden" />
 				</div>
 			</div>
 		</div>

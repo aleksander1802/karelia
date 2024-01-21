@@ -241,6 +241,7 @@ export default function MasterHouse() {
 					width={masterHouseWidth}
 					height={masterHouseHeight}
 					alt="Master house"
+					priority
 					className="
 					xl:w-[972px] xl:h-[1049px] 
 					lg2:w-[733px] lg2:h-[783px] 
@@ -254,6 +255,7 @@ export default function MasterHouse() {
 						width={masterHouseFenceWidth}
 						height={masterHouseFenceHeight}
 						alt="Master house fense"
+						priority
 						className="
 						sm:relative absolute
 						sm:top-0 top-[348px] left-0

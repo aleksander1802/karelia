@@ -109,11 +109,9 @@ function NatureSecondSlider() {
 										src={item['first-image']}
 										width={activeSlideWidth || 753}
 										height={activeSlideHeight || 497}
-										alt={`Nature second slider image ${index}`}
-										style={{
-											objectFit: 'cover',
-										}}
-										className="
+										alt={`Nature second slider image ${index}`}										
+										priority
+										className=" bg-cover
 										xl:w-[753px] xl:h-[497px]
 										lg:w-[596px] lg:h-[393px]
 										sm:w-[456px] sm:h-[301px]
@@ -130,6 +128,7 @@ function NatureSecondSlider() {
 											width={slideWidth || 356}
 											height={slideHeight || 375}
 											alt={`Nature second slider image ${index}`}
+											priority
 											className="
 											xl:w-[356px] xl:h-[375px] 
 											lg:w-[277px] lg:h-[291px] 

@@ -22,6 +22,7 @@ export default function SpaHouse() {
 				width={treeWidth || 408}
 				height={treeHeight || 328}
 				alt="Spa house tree"
+				priority
 				className="absolute 
 				xl:-top-[118px] lg:-top-[107px] sm:-top-[77px] -top-[54px] 
 				xl:-left-[155px] lg:-left-[109px] sm:-left-[145px] -left-[93px]

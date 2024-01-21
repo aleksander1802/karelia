@@ -16,6 +16,7 @@ export default function SpaHouseTub() {
 				width={spaHouseTubWidth || 606}
 				height={spaHouseTubHeight || 807}
 				alt="Spa house tub"
+				priority
 				className="z-30 
 				xl:w-[606px] xl:h-[807px] 
 				lg:w-[474px] lg:h-[631px]
