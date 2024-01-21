@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SpaShowerImage from '../../../../public/images/spa_house/spa_shower.png';
+import SpaShowerImage from '/karelia/images/spa_house/spa_shower.png';
 
 export default function SpaHouseShower() {
 	const spaHouseShowerWidth = 606;

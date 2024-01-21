@@ -7,9 +7,9 @@ import Image from 'next/image';
 import styles from './master-house-slider.module.css';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
-import MaterHouseFirstSliderImage from '../../../../../public/images/master_house/slider_first.jpg';
-import MaterHouseSecondSliderImage from '../../../../../public/images/master_house/master_house.png';
-import MaterHouseThirdSliderImage from '../../../../../public/images/master_house/slider_third.png';
+import MaterHouseFirstSliderImage from '/karelia/images/master_house/slider_first.jpg';
+import MaterHouseSecondSliderImage from '/karelia/images/master_house/master_house.png';
+import MaterHouseThirdSliderImage from '/karelia/images/master_house/slider_third.png';
 
 const serviceData1 = [
 	{

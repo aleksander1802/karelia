@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SpaPoolImage from '../../../../public/images/spa_house/spa_pool.png';
+import SpaPoolImage from '/karelia/images/spa_house/spa_pool.png';
 
 export default function SpaHousePool() {
 	const spaHousePoolWidth = 607;

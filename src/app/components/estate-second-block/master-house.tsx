@@ -2,9 +2,9 @@ import LogoMaster from '@/app/assets/svg/Logo-master-svg';
 import Image from 'next/image';
 import MasterHouseHearth from './master-house-hearth';
 import MasterHouseModern from './master-house-modern';
-import MasterHouseImage from '../../../../public/images/master_house/master_house.png';
-import MasterHouseFenceImage from '../../../../public/images/master_house/master_house_fence.png';
-import MasterHouseGlassImage from '../../../../public/images/master_house/master_house_glasshouse.png';
+import MasterHouseImage from '/karelia/images/master_house/master_house.png';
+import MasterHouseFenceImage from '/karelia/images/master_house/master_house_fence.png';
+import MasterHouseGlassImage from '/karelia/images/master_house/master_house_glasshouse.png';
 
 export default function MasterHouse() {
 	const firstLevel = [

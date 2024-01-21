@@ -5,16 +5,16 @@ import { A11y, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-second-slider.module.css';
-import NatureSecondSliderFirstImage from '../../../../../../public/images/nature_house/second_slider_first.png';
-import NatureSecondSliderSecondImage from '../../../../../../public/images/nature_house/second_slider_first.png';
-import NatureSecondSliderValaamFirstImage from '../../../../../../public/images/nature_house/valaam_1.jpg';
-import NatureSecondSliderValaamSecondImage from '../../../../../../public/images/nature_house/valaam_2.jpg';
-import NatureSecondSliderPaanFirstImage from '../../../../../../public/images/nature_house/paan_1.jpg';
-import NatureSecondSliderPaanSecondImage from '../../../../../../public/images/nature_house/paan_2.jpg';
-import NatureSecondSliderSolFirstImage from '../../../../../../public/images/nature_house/sol_1.jpg';
-import NatureSecondSliderSolSecondImage from '../../../../../../public/images/nature_house/sol_2.jpg';
-import NatureSecondSliderRusFirstImage from '../../../../../../public/images/nature_house/rus_1.jpg';
-import NatureSecondSliderRusSecondImage from '../../../../../../public/images/nature_house/rus_2.jpg';
+import NatureSecondSliderFirstImage from '/karelia/images/nature_house/second_slider_first.png';
+import NatureSecondSliderSecondImage from '/karelia/images/nature_house/second_slider_first.png';
+import NatureSecondSliderValaamFirstImage from '/karelia/images/nature_house/valaam_1.jpg';
+import NatureSecondSliderValaamSecondImage from '/karelia/images/nature_house/valaam_2.jpg';
+import NatureSecondSliderPaanFirstImage from '/karelia/images/nature_house/paan_1.jpg';
+import NatureSecondSliderPaanSecondImage from '/karelia/images/nature_house/paan_2.jpg';
+import NatureSecondSliderSolFirstImage from '/karelia/images/nature_house/sol_1.jpg';
+import NatureSecondSliderSolSecondImage from '/karelia/images/nature_house/sol_2.jpg';
+import NatureSecondSliderRusFirstImage from '/karelia/images/nature_house/rus_1.jpg';
+import NatureSecondSliderRusSecondImage from '/karelia/images/nature_house/rus_2.jpg';
 
 const serviceData = [
 	{

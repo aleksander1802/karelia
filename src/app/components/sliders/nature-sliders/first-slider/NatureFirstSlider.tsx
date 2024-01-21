@@ -5,11 +5,11 @@ import { Controller, Navigation, Pagination } from 'swiper/modules';
 import NavigationArrow from '@/app/assets/svg/Arrow-svg';
 import Image from 'next/image';
 import styles from './nature-first-slider.module.css';
-import NatureFirstSliderFirstImage from '../../../../../../public/images/nature_house/first_slider_first.png';
-import NatureFirstSliderSecondImage from '../../../../../../public/images/nature_house/first_slider_second.png';
-import NatureFirstSliderThirdImage from '../../../../../../public/images/nature_house/first_slider_third.png';
-import NatureFirstSliderFourthImage from '../../../../../../public/images/nature_house/first_slider_fourth.png';
-import NatureFirstSliderFifthImage from '../../../../../../public/images/nature_house/first_slider_fifth.jpg';
+import NatureFirstSliderFirstImage from '/karelia/images/nature_house/first_slider_first.png';
+import NatureFirstSliderSecondImage from '/karelia/images/nature_house/first_slider_second.png';
+import NatureFirstSliderThirdImage from '/karelia/images/nature_house/first_slider_third.png';
+import NatureFirstSliderFourthImage from '/karelia/images/nature_house/first_slider_fourth.png';
+import NatureFirstSliderFifthImage from '/karelia/images/nature_house/first_slider_fifth.jpg';
 
 const serviceData = [
 	{
