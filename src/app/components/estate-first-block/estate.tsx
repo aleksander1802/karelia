@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { Poiret_One } from 'next/font/google';
 import Logo from '@/app/assets/svg/Logo-svg';
 import LogoLink from '@/app/assets/svg/Logo-link-svg';
-import EstateBackground from '/karelia/images/estate/estate_background.png';
-import EstateTree from '/karelia/images/estate/tree.png';
+import EstateBackground from '../../../../public/images/estate/estate_background.png';
+import EstateTree from '../../../../public/images/estate/tree.png';
 
 const poiret = Poiret_One({ subsets: ['cyrillic'], weight: '400' });
 

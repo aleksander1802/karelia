@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import MasterHouseTV from '/karelia/images/master_house/master_house_tv.png';
+import MasterHouseTV from '../../../../public/images/master_house/master_house_tv.png';
 
 export default function MasterHouseModern() {
 	const masterHouseModernWidth = 733;

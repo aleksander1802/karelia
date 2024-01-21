@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SpaTubImage from '/karelia/images/spa_house/spa_tub.png';
+import SpaTubImage from '../../../../public/images/spa_house/spa_tub.png';
 
 export default function SpaHouseTub() {
 	const spaHouseTubWidth = 606;

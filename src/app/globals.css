@@ -22,11 +22,11 @@
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
 	--estate-background: #090e17;
-	--estate-background-image: url('/karelia/images/estate/estate_background.png');
-	--spa-house-background-image: url('/karelia/images/spa_house/spa_house.png');
-	--nature-house-background-image: url('/karelia/images/nature_house/nature_house_background.png');
-	--location-map: url('/karelia/images/location/location_map.png');
-	--location-estate: url('/karelia/images/location/location_estate.png');
+	--estate-background-image: url('/images/estate/estate_background.png');
+	--spa-house-background-image: url('/images/spa_house/spa_house.png');
+	--nature-house-background-image: url('/images/nature_house/nature_house_background.png');
+	--location-map: url('/images/location/location_map.png');
+	--location-estate: url('/images/location/location_estate.png');
 	--white: #fff;
 	--accent_slider: #c76b4f;
 	--secondary_slider: #2e3c55;
@@ -40,7 +40,7 @@
 
 .location-estate {
 	background: var(--location-estate);
-	
+
 	background-position: center;
 	background-repeat: no-repeat;
 }

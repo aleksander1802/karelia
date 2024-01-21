@@ -7,9 +7,9 @@ import Image from 'next/image';
 import styles from './spa-house-slider.module.css';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
-import MasterHouseFirstSliderImage from '/karelia/images/master_house/slider_first.jpg';
-import MasterHouseSecondSliderImage from '/karelia/images/spa_house/spa_second_slider.png';
-import MasterHouseThirdSliderImage from '/karelia/images/spa_house/spa_third_slider.png';
+import MasterHouseFirstSliderImage from '../../../../../public/images/master_house/slider_first.jpg';
+import MasterHouseSecondSliderImage from '../../../../../public/images/spa_house/spa_second_slider.png';
+import MasterHouseThirdSliderImage from '../../../../../public/images/spa_house/spa_third_slider.png';
 
 const serviceData1 = [
 	{
